@@ -1,2 +1,2 @@
-# Practice1
+# Practice 1
 This a repository for the practice 1 of SDET
