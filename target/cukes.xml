@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="2" time="43.855297">
+<testcase classname="Account Login" name="Validating the browser and the home page" time="21.959118">
+<system-out><![CDATA[Given Validate the browser..................................................passed
+When Browser is triggered...................................................passed
+Then Check if the user is on the home page..................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Account Login" name="Login into the existing account" time="21.896179">
+<system-out><![CDATA[Given User click on the sign button.........................................passed
+And Authentication page is populated........................................passed
+When User enter the email already created with "testing@simulation.com".....passed
+And User enter the password with "DS123"....................................passed
+And User click on the Sing in button........................................passed
+Then MY ACCOUNT page is populated...........................................passed
+]]></system-out>
+</testcase>
+</testsuite>
