@@ -21,13 +21,13 @@ public class stepDefination {
     @Given("^Validate the browser$")
     public void validate_the_browser() throws Throwable {
     	my_store.launchBrowser();
-    	System.out.println("Browser openning");
+    	System.out.println("Browser openning and maximized");
     }
     
-    @When("^Browser is triggered$")
+    @When("^Home page is triggered$")
     public void browser_is_triggered() throws Throwable {
     	my_store.openURL();
-    	System.out.println("Browser triggered and maximized");
+    	System.out.println("Browser and page triggered");
     }
 
     @Then("^Check if the user is on the home page$")
@@ -130,7 +130,7 @@ public class stepDefination {
        System.out.println("Password entered");
     }
 
-    @And("^User click on the Sing in button$")
+    @And("^User click on the Sign in button$")
     public void user_click_on_the_sing_in_button() throws Throwable {
     	my_store.Login();
         System.out.println("Sing in button pressed");

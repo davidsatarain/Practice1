@@ -3,8 +3,8 @@ Feature: Account Creating
 	@AccountTest
 	Scenario: Validating the browser and the home page
 	Given Validate the browser
-	When Browser is triggered
-	Then Check if the user is on the home page
+	 When Home page is triggered
+	 Then Check if the user is on the home page
 	
 	@AccountTest
   Scenario: Creating an account
