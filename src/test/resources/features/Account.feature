@@ -19,7 +19,7 @@ Feature: Account Creating
     Given The User is on the CREATE AN ACCOUNT page
      When User choose the title "Mr"
      	And User enter the following details of personal information
-     	| David | Satarain | DS123 | 22 | 06 | 1997 |
+     	| David | Satarain | DS123 | 22 | 6 | 1997 |
      	And User select the newsletter checkbox
      	And User select the special offers checkbox
      	And User enter the following details of the address

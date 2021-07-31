@@ -3,12 +3,8 @@ package Actions;
 import java.io.IOException;
 import java.util.List;
 
-import org.jsoup.Jsoup;
-import org.jsoup.nodes.Document;
-import org.jsoup.select.Elements;
 import org.junit.Assert;
 import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -342,21 +338,32 @@ public class MyStore extends Base{
 	public void finishing() throws InterruptedException {
 		Thread.sleep(2000);
 		
-		List<WebElement> buttons = driver.findElements(By.xpath("//a[@href='http://automationpractice.com/']"));
+		List<WebElement> buttons = driver.findElements(By.xpath("//a[@href='http://automationpractice.com/index.php?controller=my-account']"));
 		
 		for(int i=0;i<buttons.size();i++) {
 			
 			String[] name = buttons.get(i).getText().split("-");
 			String formattedName = name[0].trim();
 			
-			if(formattedName.contains("Home")) {
-				driver.findElements(By.xpath("//a[@href='http://automationpractice.com/']")).get(i).click();
+			if(formattedName.contains("Back to your account.")) {
+				driver.findElements(By.xpath("//a[@href='http://automationpractice.com/index.php?controller=my-account']")).get(i).click();
 				break;
 			}
 			
 		}
+		
+	}
+	
+	public void signOut() throws InterruptedException {
+		driver.findElement(By.cssSelector("a.logout")).click();
+		Thread.sleep(2000);
+	}
+	
+	public void closingWindow() {
 		driver.close();
 	}
+	
+	
 }
 	
 	

@@ -275,6 +275,26 @@ public class stepDefination {
         System.out.println("The user has read the terms of the service.");
     }
     
+    @When("^User click on the sign out button$")
+    public void user_click_on_the_sign_out_button() throws Throwable {
+        my_store.signOut();
+        System.out.println("The user clicked on the Sign out button");
+
+    }
+
+    @Then("^The session has been closed sucessfully$")
+    public void the_session_has_been_closed_sucessfully() throws Throwable {
+        my_store.verifyingAuthentication();
+        System.out.println("The user has logged out sucessfully");
+
+    }
+
+    @And("^The browser closes$")
+    public void the_browser_closes() throws Throwable {
+        my_store.closingWindow();
+        System.out.println("The user has finished and the browser is closed.");
+
+    }
 
 
 }
