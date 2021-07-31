@@ -18,11 +18,9 @@ Feature: Account Logout
   @LogoutTest
   Scenario: Sign off from the existing session 
     Given MY ACCOUNT page is populated 
-    	And Authentication page is populated
-     When User enter the email already created with "testing@simulation.com"
-      And User enter the password with "DS123"
-      And User click on the Sign in button
-     Then MY ACCOUNT page is populated
+     When User click on the sign out button
+     Then The session has been closed sucessfully
+      And The browser closes
       
    
     

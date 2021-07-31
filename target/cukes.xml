@@ -1,18 +1,62 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="2" time="43.855297">
-<testcase classname="Account Login" name="Validating the browser and the home page" time="21.959118">
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="5" time="131.116247">
+<testcase classname="Shopping Login" name="Validating the browser and the home page" time="8.01855">
 <system-out><![CDATA[Given Validate the browser..................................................passed
-When Browser is triggered...................................................passed
+When Home page is triggered.................................................passed
 Then Check if the user is on the home page..................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Account Login" name="Login into the existing account" time="21.896179">
+<testcase classname="Shopping Login" name="Login into the existing account" time="3.719023">
 <system-out><![CDATA[Given User click on the sign button.........................................passed
 And Authentication page is populated........................................passed
 When User enter the email already created with "testing@simulation.com".....passed
 And User enter the password with "DS123"....................................passed
-And User click on the Sing in button........................................passed
+And User click on the Sign in button........................................passed
 Then MY ACCOUNT page is populated...........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Shopping Login" name="The user search for items from the search bar" time="19.716064">
+<system-out><![CDATA[Given Home page is triggered................................................passed
+When User search for some "T-shirt".........................................passed
+And User click on the search button.........................................passed
+And User select the "Faded Short" option....................................passed
+And User selects the following details for the item.........................passed
+And User add the products to the cart.......................................passed
+And User click on the Continue shopping button..............................passed
+Then The user is ready to continue..........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Shopping Login" name="The user search for items from the category tabs" time="56.819997">
+<system-out><![CDATA[Given Home page is triggered................................................passed
+When User click on the "Blouses" category...................................passed
+And User select the "Blouse" option.........................................passed
+And User selects the following details for the item.........................passed
+And User add the products to the cart.......................................passed
+And User click on the Continue shopping button..............................passed
+And User click on the "Evening Dresses" category............................passed
+And User click on the "All specials" small button...........................passed
+And User select the "Printed Chiffon Dress" option..........................passed
+And User selects the following details for the item.........................passed
+And User add the products to the cart.......................................passed
+And User click on the Continue shopping button..............................passed
+Then The user is ready to continue..........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Shopping Login" name="The user is ready to pay" time="42.842613">
+<system-out><![CDATA[Given The user has products in the Cart.....................................passed
+When User click on the Check out button.....................................passed
+And User proceeds to checkout...............................................passed
+And User writes "Be careful with the clothes"...............................passed
+And User proceeds to Shipping options.......................................passed
+And User reads the terms....................................................passed
+And User select the Terms of service checkbox...............................passed
+And User proceeds to the payment............................................passed
+And User selects the "bankwire" payment option..............................passed
+And User confirms the order.................................................passed
+And User goes to the orders page............................................passed
+And User checks and confirms the details of the order.......................passed
+And User downloads the invoice as PDF.......................................passed
+Then The order has been completed successfully..............................passed
 ]]></system-out>
 </testcase>
 </testsuite>

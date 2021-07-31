@@ -25,7 +25,7 @@ Feature: Shopping Login
       | 2 | M | Blue |
       And User add the products to the cart
       And User click on the Continue shopping button
-     Then The item is on the shopping cart
+     Then The user is ready to continue
 
 		@ShoppingTest
   Scenario: The user search for items from the category tabs
@@ -36,17 +36,14 @@ Feature: Shopping Login
       | 3 | L | Black |
       And User add the products to the cart
       And User click on the Continue shopping button
-      And User click on the "EVENING DRESSES" category
-      And User select the "Printed Dress" option
-      And User add the products to the cart
-      And User click on the Continue shopping button
-      And User click on the All specials button
+      And User click on the "Evening Dresses" category
+      And User click on the "All specials" small button
       And User select the "Printed Chiffon Dress" option
       And User selects the following details for the item
-      | 1 | S | Yellow |
+      | 1 | S | Green |
       And User add the products to the cart
       And User click on the Continue shopping button
-     Then The item is on the shopping cart
+     Then The user is ready to continue
      
      @ShoppingTest
   Scenario: The user is ready to pay
@@ -55,12 +52,13 @@ Feature: Shopping Login
   	  And User proceeds to checkout
   	  And User writes "Be careful with the clothes"
   	  And User proceeds to Shipping options
+  	  And User reads the terms
   	  And User select the Terms of service checkbox
   	  And User proceeds to the payment
-  	  And User selects the "bankwire" option
+  	  And User selects the "bankwire" payment option
   	  And User confirms the order
   	  And User goes to the orders page
-  	  And User checks the details of the order
+  	  And User checks and confirms the details of the order
   	  And User downloads the invoice as PDF
   	 Then The order has been completed successfully
   	 
