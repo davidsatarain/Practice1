@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="8" time="162.597768">
-<testcase classname="End-to-end test" name="Validating the browser and the home page" time="6.491287">
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="8" time="261.107031">
+<testcase classname="End-to-end test" name="Validating the browser and the home page" time="11.003836">
 <system-out><![CDATA[Given Validate the browser..................................................passed
 When Home page is triggered.................................................passed
 Then Check if the user is on the home page..................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="End-to-end test" name="Creating an account" time="4.761868">
+<testcase classname="End-to-end test" name="Creating an account" time="16.90397">
 <system-out><![CDATA[Given User click on the sign button.........................................passed
 And Authentication page is populated........................................passed
-When User enter the email with "endtoend3@testing.com"......................passed
+When User enter the email with "endtoend7@testing.com"......................passed
 And User click on the Create an account button..............................passed
 Then The CREATE AN ACCOUNT page is populated................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="End-to-end test" name="Filling the info" time="23.846306">
+<testcase classname="End-to-end test" name="Filling the info" time="31.628894">
 <system-out><![CDATA[Given The User is on the CREATE AN ACCOUNT page.............................passed
 When User choose the title "Mr".............................................passed
 And User enter the following details of personal information................passed
@@ -26,16 +26,16 @@ Then MY ACCOUNT page is populated...........................................pass
 And User click on the sign out button.......................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="End-to-end test" name="Login into the existing account" time="2.744977">
+<testcase classname="End-to-end test" name="Login into the existing account" time="12.120728">
 <system-out><![CDATA[Given User click on the sign button.........................................passed
 And Authentication page is populated........................................passed
-When User enter the email already created with "endtoend3@testing.com"......passed
+When User enter the email already created with "endtoend7@testing.com"......passed
 And User enter the password with "DS123"....................................passed
 And User click on the Sign in button........................................passed
 Then MY ACCOUNT page is populated...........................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="End-to-end test" name="The user search for items from the search bar" time="19.370068">
+<testcase classname="End-to-end test" name="The user search for items from the search bar" time="32.119765">
 <system-out><![CDATA[Given Home page is triggered................................................passed
 When User search for some "T-shirt".........................................passed
 And User click on the search button.........................................passed
@@ -46,7 +46,7 @@ And User click on the Continue shopping button..............................pass
 Then The user is ready to continue..........................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="End-to-end test" name="The user search for items from the category tabs" time="59.70392">
+<testcase classname="End-to-end test" name="The user search for items from the category tabs" time="82.907202">
 <system-out><![CDATA[Given Home page is triggered................................................passed
 When User click on the "Blouses" category...................................passed
 And User select the "Blouse" option.........................................passed
@@ -62,7 +62,7 @@ And User click on the Continue shopping button..............................pass
 Then The user is ready to continue..........................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="End-to-end test" name="The user is ready to pay" time="39.284739">
+<testcase classname="End-to-end test" name="The user is ready to pay" time="67.196972">
 <system-out><![CDATA[Given The user has products in the Cart.....................................passed
 When User click on the Check out button.....................................passed
 And User proceeds to checkout...............................................passed
@@ -79,7 +79,7 @@ And User downloads the invoice as PDF.......................................pass
 Then The order has been completed successfully..............................passed
 ]]></system-out>
 </testcase>
-<testcase classname="End-to-end test" name="Sign off from the existing session" time="6.394603">
+<testcase classname="End-to-end test" name="Sign off from the existing session" time="7.225664">
 <system-out><![CDATA[Given MY ACCOUNT page is populated..........................................passed
 When User click on the sign out button......................................passed
 Then The session has been closed sucessfully................................passed

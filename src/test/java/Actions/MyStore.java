@@ -45,7 +45,8 @@ public class MyStore extends Base{
 	
 	}
 	
-	public void puttingEmail(String email) {
+	public void puttingEmail(String email) throws InterruptedException {
+		Thread.sleep(2000);
 		driver.findElement(By.xpath("//input[@id='email_create']")).sendKeys(email);
 		driver.findElement(By.xpath("//span[i/@class='icon-user left']")).click();
 		
@@ -53,20 +54,20 @@ public class MyStore extends Base{
 	
 	public void selectTitle(String title) throws InterruptedException {
 		switch(title.toLowerCase()) {
-		
 			case "mr":
 				Thread.sleep(3000);
 				driver.findElement(By.xpath("//span[input/@id='id_gender1']")).click();
+				break;
 		
 			case "mrs":
 				Thread.sleep(3000);
 				driver.findElement(By.xpath("//span[input/@id='id_gender2']")).click();
-			
+				break;
 		}
 	}
 	
 	public void verifyingCreateAnAccount() throws InterruptedException {
-		Thread.sleep(3000);
+		Thread.sleep(10000);
 		Assert.assertTrue(driver.getCurrentUrl().contains("http://automationpractice.com/index.php?controller=authentication&back=my-account#account-creation"));
 	}
 	
@@ -130,7 +131,8 @@ public class MyStore extends Base{
 		driver.findElement(By.xpath("//button[@id='submitAccount']")).click();
 	}
 	
-	public void emailLogin(String email) {
+	public void emailLogin(String email) throws InterruptedException {
+		Thread.sleep(3000);
 		driver.findElement(By.xpath("//input[@id='email']")).sendKeys(email);
 		
 	}
@@ -189,14 +191,15 @@ public class MyStore extends Base{
         
 	}
 	
-	public void addToCartButton() {
+	public void addToCartButton() throws InterruptedException {
 		driver.findElement(By.xpath("//span[contains(text(),'Add to cart')]")).click();
+		Thread.sleep(3000);
 	}
 	
 	public void continueShopping() throws InterruptedException {
 		Thread.sleep(5000);
 		driver.findElement(By.xpath("//span[@title='Continue shopping']")).click();
-		Thread.sleep(2000);
+		Thread.sleep(5000);
 	}
 	
 	public void findByCategory(String category) throws InterruptedException {
@@ -293,12 +296,12 @@ public class MyStore extends Base{
 	}
 	
 	public void backToOrders() throws InterruptedException, IOException {
-		Thread.sleep(2000);
+		Thread.sleep(5000);
 		driver.findElement(By.xpath("//a[@class='button-exclusive btn btn-default']")).click();
 	}
 	
 	public void checkingOrder() throws InterruptedException {
-		Thread.sleep(2000);
+		Thread.sleep(5000);
 				
 		List<WebElement> rows = driver.findElements(By.xpath("//tr"));
 		
@@ -321,14 +324,14 @@ public class MyStore extends Base{
 	}
 	
 	public void downloadingPDF() throws InterruptedException {
-		Thread.sleep(2000);
+		Thread.sleep(10000);
 		driver.findElement(By.xpath("//a[contains(text(),'Download your invoice as a PDF file.')]")).click();
 	}
 	
 	public void readTerms() throws InterruptedException {
 		Thread.sleep(1000);
 		driver.findElement(By.cssSelector("a.iframe")).click();
-		Thread.sleep(2000);
+		Thread.sleep(5000);
 		driver.findElement(By.tagName("body")).sendKeys(Keys.END);
 		Thread.sleep(1000);
 		driver.findElement(By.xpath("//a[@title='Close']")).click();

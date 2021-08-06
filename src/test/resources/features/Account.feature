@@ -1,4 +1,4 @@
-Feature: Account Creating
+Feature: Account Creation
 	
 	@AccountTest
 	Scenario: Validating the browser and the home page
@@ -10,7 +10,7 @@ Feature: Account Creating
   Scenario: Creating an account
     Given User click on the sign button 
     	And Authentication page is populated
-     When User enter the email with "testing@simulation.com"
+     When User enter the email with "testing79@simulation.com"
       And User click on the Create an account button
      Then The CREATE AN ACCOUNT page is populated
       
