@@ -10,7 +10,7 @@ Feature: Account Creation
   Scenario: Creating an account
     Given User click on the sign button 
     	And Authentication page is populated
-     When User enter the email with "testing79@simulation.com"
+     When User enter the email with "david79@simulation.com"
       And User click on the Create an account button
      Then The CREATE AN ACCOUNT page is populated
       

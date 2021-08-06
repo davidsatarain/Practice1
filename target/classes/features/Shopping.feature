@@ -10,7 +10,7 @@ Feature: Shopping Login
   Scenario: Login into the existing account
     Given User click on the sign button 
     	And Authentication page is populated
-     When User enter the email already created with "testing79@simulation.com"
+     When User enter the email already created with "david79@simulation.com"
       And User enter the password with "DS123"
       And User click on the Sign in button
      Then MY ACCOUNT page is populated
