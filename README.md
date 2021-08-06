@@ -2,7 +2,8 @@
 This a repository for the practice 1 of SDET
 
 Design a test project for the web page http://automationpractice.com
-Requirement
+
+RequirementS:
 1) Validate the creation of a new account
 2) Validate the login of an existing account
 3) Validate the shopping process till the end
