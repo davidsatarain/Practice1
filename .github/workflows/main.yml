@@ -26,11 +26,3 @@ jobs:
     
     - name: Build with Maven
       run: mvn -B package --file pom.xml
-      
-    - name: List the current directory
-      run: ls -a
-      
-    - name: Finding the target folder
-      run: 
-        cd target
-        ls -a
