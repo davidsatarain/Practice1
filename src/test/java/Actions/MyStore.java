@@ -8,11 +8,13 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import cucumber.api.DataTable;
+import io.github.bonigarcia.wdm.WebDriverManager;
 import util.Base;
 
 public class MyStore extends Base{
@@ -21,8 +23,13 @@ public class MyStore extends Base{
 	private String reference;
 	
 	public void launchBrowser() {
-		System.setProperty("webdriver.chrome.driver", "C:\\Users\\102331781\\Documents\\chromedriver.exe");
-		driver = new ChromeDriver();
+		//System.setProperty("webdriver.chrome.driver", "C:\\Users\\102331781\\Documents\\chromedriver.exe");
+		WebDriverManager.chromedriver().setup();
+		ChromeOptions options = new ChromeOptions();
+		options.addArguments("--no-sandbox");
+		options.addArguments("--disable-dev-shm-usage");
+		options.addArguments("--headless");
+		driver = new ChromeDriver(options);
 		driver.manage().window().maximize();
 	}
 	
