@@ -1,125 +1,266 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="56" failures="0" name="cucumberOptions.TestRunner" time="0.008" errors="0" skipped="0">
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="cucumberOptions.TestRunner" time="302.545" tests="70" errors="4" skipped="14" failures="4">
   <properties>
-    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
-    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_291\jre\bin"/>
-    <property name="java.vm.version" value="25.291-b10"/>
-    <property name="java.vm.vendor" value="Oracle Corporation"/>
-    <property name="maven.multiModuleProjectDirectory" value="C:\Users\102331781\eclipse-workspace\Automation"/>
-    <property name="java.vendor.url" value="http://java.oracle.com/"/>
-    <property name="path.separator" value=";"/>
-    <property name="guice.disable.misplaced.annotation.check" value="true"/>
-    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="sun.desktop" value="windows"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
     <property name="file.encoding.pkg" value="sun.io"/>
-    <property name="user.script" value=""/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\Users\102331781\eclipse-workspace\Practice1\target\test-classes;C:\Users\102331781\eclipse-workspace\Practice1\target\classes;C:\Users\102331781\.m2\repository\info\cukes\cucumber-java\1.2.5\cucumber-java-1.2.5.jar;C:\Users\102331781\.m2\repository\info\cukes\cucumber-core\1.2.5\cucumber-core-1.2.5.jar;C:\Users\102331781\.m2\repository\info\cukes\cucumber-html\0.2.3\cucumber-html-0.2.3.jar;C:\Users\102331781\.m2\repository\info\cukes\cucumber-jvm-deps\1.0.5\cucumber-jvm-deps-1.0.5.jar;C:\Users\102331781\.m2\repository\info\cukes\gherkin\2.12.2\gherkin-2.12.2.jar;C:\Users\102331781\.m2\repository\org\jsoup\jsoup\1.13.1\jsoup-1.13.1.jar;C:\Users\102331781\.m2\repository\info\cukes\cucumber-junit\1.2.5\cucumber-junit-1.2.5.jar;C:\Users\102331781\.m2\repository\junit\junit\4.12\junit-4.12.jar;C:\Users\102331781\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\102331781\.m2\repository\org\seleniumhq\selenium\selenium-java\3.141.59\selenium-java-3.141.59.jar;C:\Users\102331781\.m2\repository\org\seleniumhq\selenium\selenium-api\3.141.59\selenium-api-3.141.59.jar;C:\Users\102331781\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\3.141.59\selenium-chrome-driver-3.141.59.jar;C:\Users\102331781\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\3.141.59\selenium-edge-driver-3.141.59.jar;C:\Users\102331781\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\3.141.59\selenium-firefox-driver-3.141.59.jar;C:\Users\102331781\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\3.141.59\selenium-ie-driver-3.141.59.jar;C:\Users\102331781\.m2\repository\org\seleniumhq\selenium\selenium-opera-driver\3.141.59\selenium-opera-driver-3.141.59.jar;C:\Users\102331781\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\3.141.59\selenium-remote-driver-3.141.59.jar;C:\Users\102331781\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\3.141.59\selenium-safari-driver-3.141.59.jar;C:\Users\102331781\.m2\repository\org\seleniumhq\selenium\selenium-support\3.141.59\selenium-support-3.141.59.jar;C:\Users\102331781\.m2\repository\net\bytebuddy\byte-buddy\1.8.15\byte-buddy-1.8.15.jar;C:\Users\102331781\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\102331781\.m2\repository\com\google\guava\guava\25.0-jre\guava-25.0-jre.jar;C:\Users\102331781\.m2\repository\com\google\code\findbugs\jsr305\1.3.9\jsr305-1.3.9.jar;C:\Users\102331781\.m2\repository\org\checkerframework\checker-compat-qual\2.0.0\checker-compat-qual-2.0.0.jar;C:\Users\102331781\.m2\repository\com\google\errorprone\error_prone_annotations\2.1.3\error_prone_annotations-2.1.3.jar;C:\Users\102331781\.m2\repository\com\google\j2objc\j2objc-annotations\1.1\j2objc-annotations-1.1.jar;C:\Users\102331781\.m2\repository\org\codehaus\mojo\animal-sniffer-annotations\1.14\animal-sniffer-annotations-1.14.jar;C:\Users\102331781\.m2\repository\com\squareup\okhttp3\okhttp\3.11.0\okhttp-3.11.0.jar;C:\Users\102331781\.m2\repository\com\squareup\okio\okio\1.14.0\okio-1.14.0.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="user.timezone" value="America/Mexico_City"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="os.name" value="Windows 10"/>
     <property name="user.country" value="MX"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
-    <property name="sun.os.patch.level" value=""/>
-    <property name="test" value="TestRunner"/>
-    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="user.dir" value="C:\Users\102331781\eclipse-workspace\Automation"/>
-    <property name="java.runtime.version" value="1.8.0_291-b10"/>
-    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
-    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_291\jre\lib\endorsed"/>
-    <property name="os.arch" value="amd64"/>
-    <property name="java.io.tmpdir" value="C:\Users\102331~1\AppData\Local\Temp\"/>
-    <property name="line.separator" value="
-"/>
-    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
-    <property name="user.variant" value=""/>
-    <property name="os.name" value="Windows 10"/>
-    <property name="classworlds.conf" value="C:\Program Files\Apache\Maven\apache-maven-3.8.1\bin\..\bin\m2.conf"/>
-    <property name="sun.jnu.encoding" value="Cp1252"/>
-    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_291\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\nodejs\;C:\Program Files\Java\jdk1.8.0_291\bin;C:\Program Files\Apache\Maven\apache-maven-3.8.1\bin;C:\Users\102331781\AppData\Local\Microsoft\WindowsApps;;C:\Users\102331781\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\102331781\AppData\Roaming\npm;."/>
-    <property name="maven.conf" value="C:\Program Files\Apache\Maven\apache-maven-3.8.1\bin\../conf"/>
-    <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="java.class.version" value="52.0"/>
-    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
-    <property name="os.version" value="10.0"/>
-    <property name="library.jansi.path" value="C:\Program Files\Apache\Maven\apache-maven-3.8.1\bin\..\lib\jansi-native"/>
-    <property name="user.home" value="C:\Users\102331781"/>
-    <property name="user.timezone" value="America/Mexico_City"/>
-    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
-    <property name="java.specification.version" value="1.8"/>
-    <property name="file.encoding" value="Cp1252"/>
-    <property name="user.name" value="102331781"/>
-    <property name="java.class.path" value="C:\Program Files\Apache\Maven\apache-maven-3.8.1\bin\..\boot\plexus-classworlds-2.6.0.jar"/>
-    <property name="java.vm.specification.version" value="1.8"/>
-    <property name="sun.arch.data.model" value="64"/>
-    <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_291\jre"/>
-    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -Dtest=TestRunner test"/>
-    <property name="java.specification.vendor" value="Oracle Corporation"/>
-    <property name="user.language" value="es"/>
-    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
-    <property name="java.vm.info" value="mixed mode"/>
-    <property name="java.version" value="1.8.0_291"/>
-    <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.8.0_291\jre\lib\ext;C:\Windows\Sun\Java\lib\ext"/>
-    <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_291\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_291\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_291\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_291\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_291\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_291\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_291\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_291\jre\classes"/>
-    <property name="sun.stderr.encoding" value="cp437"/>
-    <property name="java.vendor" value="Oracle Corporation"/>
-    <property name="maven.home" value="C:\Program Files\Apache\Maven\apache-maven-3.8.1\bin\.."/>
-    <property name="file.separator" value="\"/>
-    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_291\jre\bin"/>
+    <property name="sun.java.command" value="C:\Users\102331~1\AppData\Local\Temp\surefire2211338750484167513\surefirebooter1066473320290373407.jar C:\Users\102331781\AppData\Local\Temp\surefire2211338750484167513 2021-08-09T11-54-12_688-jvmRun1 surefire6188595967329786632tmp surefire_01774252785542192211tmp"/>
+    <property name="surefire.test.class.path" value="C:\Users\102331781\eclipse-workspace\Practice1\target\test-classes;C:\Users\102331781\eclipse-workspace\Practice1\target\classes;C:\Users\102331781\.m2\repository\info\cukes\cucumber-java\1.2.5\cucumber-java-1.2.5.jar;C:\Users\102331781\.m2\repository\info\cukes\cucumber-core\1.2.5\cucumber-core-1.2.5.jar;C:\Users\102331781\.m2\repository\info\cukes\cucumber-html\0.2.3\cucumber-html-0.2.3.jar;C:\Users\102331781\.m2\repository\info\cukes\cucumber-jvm-deps\1.0.5\cucumber-jvm-deps-1.0.5.jar;C:\Users\102331781\.m2\repository\info\cukes\gherkin\2.12.2\gherkin-2.12.2.jar;C:\Users\102331781\.m2\repository\org\jsoup\jsoup\1.13.1\jsoup-1.13.1.jar;C:\Users\102331781\.m2\repository\info\cukes\cucumber-junit\1.2.5\cucumber-junit-1.2.5.jar;C:\Users\102331781\.m2\repository\junit\junit\4.12\junit-4.12.jar;C:\Users\102331781\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\102331781\.m2\repository\org\seleniumhq\selenium\selenium-java\3.141.59\selenium-java-3.141.59.jar;C:\Users\102331781\.m2\repository\org\seleniumhq\selenium\selenium-api\3.141.59\selenium-api-3.141.59.jar;C:\Users\102331781\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\3.141.59\selenium-chrome-driver-3.141.59.jar;C:\Users\102331781\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\3.141.59\selenium-edge-driver-3.141.59.jar;C:\Users\102331781\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\3.141.59\selenium-firefox-driver-3.141.59.jar;C:\Users\102331781\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\3.141.59\selenium-ie-driver-3.141.59.jar;C:\Users\102331781\.m2\repository\org\seleniumhq\selenium\selenium-opera-driver\3.141.59\selenium-opera-driver-3.141.59.jar;C:\Users\102331781\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\3.141.59\selenium-remote-driver-3.141.59.jar;C:\Users\102331781\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\3.141.59\selenium-safari-driver-3.141.59.jar;C:\Users\102331781\.m2\repository\org\seleniumhq\selenium\selenium-support\3.141.59\selenium-support-3.141.59.jar;C:\Users\102331781\.m2\repository\net\bytebuddy\byte-buddy\1.8.15\byte-buddy-1.8.15.jar;C:\Users\102331781\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\102331781\.m2\repository\com\google\guava\guava\25.0-jre\guava-25.0-jre.jar;C:\Users\102331781\.m2\repository\com\google\code\findbugs\jsr305\1.3.9\jsr305-1.3.9.jar;C:\Users\102331781\.m2\repository\org\checkerframework\checker-compat-qual\2.0.0\checker-compat-qual-2.0.0.jar;C:\Users\102331781\.m2\repository\com\google\errorprone\error_prone_annotations\2.1.3\error_prone_annotations-2.1.3.jar;C:\Users\102331781\.m2\repository\com\google\j2objc\j2objc-annotations\1.1\j2objc-annotations-1.1.jar;C:\Users\102331781\.m2\repository\org\codehaus\mojo\animal-sniffer-annotations\1.14\animal-sniffer-annotations-1.14.jar;C:\Users\102331781\.m2\repository\com\squareup\okhttp3\okhttp\3.11.0\okhttp-3.11.0.jar;C:\Users\102331781\.m2\repository\com\squareup\okio\okio\1.14.0\okio-1.14.0.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\102331781"/>
+    <property name="user.language" value="es"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_291\jre"/>
+    <property name="basedir" value="C:\Users\102331781\eclipse-workspace\Practice1"/>
+    <property name="file.separator" value="\"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="surefire.real.class.path" value="C:\Users\102331~1\AppData\Local\Temp\surefire2211338750484167513\surefirebooter1066473320290373407.jar"/>
+    <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_291\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_291\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_291\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_291\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_291\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_291\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_291\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_291\jre\classes"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="1.8.0_291-b10"/>
+    <property name="user.name" value="102331781"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_291\jre\lib\endorsed"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="C:\Users\102331781\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\102331~1\AppData\Local\Temp\"/>
+    <property name="java.version" value="1.8.0_291"/>
+    <property name="user.dir" value="C:\Users\102331781\eclipse-workspace\Practice1"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_291\jre\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\nodejs\;C:\Program Files\Java\jdk1.8.0_291\bin;C:\Program Files\Apache\Maven\apache-maven-3.8.1\bin;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Program Files\Git\cmd;C:\Users\102331781\AppData\Local\Programs\Python\Python39\Scripts;C:\Users\102331781\Downloads\Web-Services-REST-API-Testing-with-SoapUI-Real-Time-Projects-master\Web-Services-REST-API-Testing-with-SoapUI-Real-Time-Projects-master\axis2-1.6.2\bin;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\102331781\AppData\Local\Microsoft\WindowsApps;C:\Users\102331781\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\102331781\AppData\Roaming\npm;C:\Users\102331781\AppData\Local\Programs\Python\Python39\Scripts;;."/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="25.291-b10"/>
+    <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.8.0_291\jre\lib\ext;C:\Windows\Sun\Java\lib\ext"/>
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
-    <property name="sun.stdout.encoding" value="cp437"/>
-    <property name="sun.desktop" value="windows"/>
-    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="java.class.version" value="52.0"/>
   </properties>
-  <testcase classname="Scenario: Home page default login" name="Given validate the browser" time="0.004"/>
-  <testcase classname="Scenario: Home page default login" name="When Browser is triggered" time="0"/>
-  <testcase classname="Scenario: Home page default login" name="Then check if browser is started" time="0"/>
-  <testcase classname="Scenario: Home page default login" name="Given User is on NetBanking landing page" time="0"/>
-  <testcase classname="Scenario: Home page default login" name="When User login into application with &quot;jin&quot; and &quot;1234&quot;" time="0"/>
-  <testcase classname="Scenario: Home page default login" name="Then Home page is populated" time="0"/>
-  <testcase classname="Scenario: Home page default login" name="And Cards displayed are &quot;true&quot;" time="0"/>
-  <testcase classname="Scenario: Home page default login" name="Scenario: Home page default login" time="0.002"/>
-  <testcase classname="Scenario: Home page default login" name="Given validate the browser" time="0"/>
-  <testcase classname="Scenario: Home page default login" name="When Browser is triggered" time="0"/>
-  <testcase classname="Scenario: Home page default login" name="Then check if browser is started" time="0"/>
-  <testcase classname="Scenario: Home page default login" name="Given User is on NetBanking landing page" time="0"/>
-  <testcase classname="Scenario: Home page default login" name="When User login into application with &quot;john&quot; and &quot;4321&quot;" time="0"/>
-  <testcase classname="Scenario: Home page default login" name="Then Home page is populated" time="0"/>
-  <testcase classname="Scenario: Home page default login" name="And Cards displayed are &quot;false&quot;" time="0"/>
-  <testcase classname="Scenario: Home page default login" name="Scenario: Home page default login" time="0"/>
-  <testcase classname="Scenario: Home page default login" name="Given validate the browser" time="0"/>
-  <testcase classname="Scenario: Home page default login" name="When Browser is triggered" time="0"/>
-  <testcase classname="Scenario: Home page default login" name="Then check if browser is started" time="0"/>
-  <testcase classname="Scenario: Home page default login" name="Given User is on NetBanking landing page" time="0"/>
-  <testcase classname="Scenario: Home page default login" name="When User sign up with following details" time="0"/>
-  <testcase classname="Scenario: Home page default login" name="Then Home page is populated" time="0"/>
-  <testcase classname="Scenario: Home page default login" name="And Cards displayed are &quot;false&quot;" time="0"/>
-  <testcase classname="Scenario: Home page default login" name="Scenario: Home page default login" time="0"/>
-  <testcase classname="| user1 | pass1 |" name="Given validate the browser" time="0"/>
-  <testcase classname="| user1 | pass1 |" name="When Browser is triggered" time="0"/>
-  <testcase classname="| user1 | pass1 |" name="Then check if browser is started" time="0"/>
-  <testcase classname="| user1 | pass1 |" name="Given User is on NetBanking landing page" time="0"/>
-  <testcase classname="| user1 | pass1 |" name="When User login in to application with user1 and pass1" time="0"/>
-  <testcase classname="| user1 | pass1 |" name="Then Home page is populated" time="0"/>
-  <testcase classname="| user1 | pass1 |" name="And Cards displayed are &quot;true&quot;" time="0"/>
-  <testcase classname="| user1 | pass1 |" name="| user1 | pass1 |" time="0.001"/>
-  <testcase classname="| user2 | pass2 |" name="Given validate the browser" time="0"/>
-  <testcase classname="| user2 | pass2 |" name="When Browser is triggered" time="0"/>
-  <testcase classname="| user2 | pass2 |" name="Then check if browser is started" time="0"/>
-  <testcase classname="| user2 | pass2 |" name="Given User is on NetBanking landing page" time="0"/>
-  <testcase classname="| user2 | pass2 |" name="When User login in to application with user2 and pass2" time="0"/>
-  <testcase classname="| user2 | pass2 |" name="Then Home page is populated" time="0"/>
-  <testcase classname="| user2 | pass2 |" name="And Cards displayed are &quot;true&quot;" time="0"/>
-  <testcase classname="| user2 | pass2 |" name="| user2 | pass2 |" time="0"/>
-  <testcase classname="| user3 | pass3 |" name="Given validate the browser" time="0"/>
-  <testcase classname="| user3 | pass3 |" name="When Browser is triggered" time="0"/>
-  <testcase classname="| user3 | pass3 |" name="Then check if browser is started" time="0"/>
-  <testcase classname="| user3 | pass3 |" name="Given User is on NetBanking landing page" time="0"/>
-  <testcase classname="| user3 | pass3 |" name="When User login in to application with user3 and pass3" time="0"/>
-  <testcase classname="| user3 | pass3 |" name="Then Home page is populated" time="0"/>
-  <testcase classname="| user3 | pass3 |" name="And Cards displayed are &quot;true&quot;" time="0"/>
-  <testcase classname="| user3 | pass3 |" name="| user3 | pass3 |" time="0"/>
-  <testcase classname="| user4 | pass4 |" name="Given validate the browser" time="0"/>
-  <testcase classname="| user4 | pass4 |" name="When Browser is triggered" time="0"/>
-  <testcase classname="| user4 | pass4 |" name="Then check if browser is started" time="0"/>
-  <testcase classname="| user4 | pass4 |" name="Given User is on NetBanking landing page" time="0"/>
-  <testcase classname="| user4 | pass4 |" name="When User login in to application with user4 and pass4" time="0"/>
-  <testcase classname="| user4 | pass4 |" name="Then Home page is populated" time="0"/>
-  <testcase classname="| user4 | pass4 |" name="And Cards displayed are &quot;true&quot;" time="0"/>
-  <testcase classname="| user4 | pass4 |" name="| user4 | pass4 |" time="0.001"/>
+  <testcase name="Given Validate the browser" classname="Scenario: Validating the browser and the home page" time="0"/>
+  <testcase name="When Home page is triggered" classname="Scenario: Validating the browser and the home page" time="0"/>
+  <testcase name="Then Check if the user is on the home page" classname="Scenario: Validating the browser and the home page" time="0"/>
+  <testcase name="Scenario: Validating the browser and the home page" classname="Scenario: Validating the browser and the home page" time="0"/>
+  <testcase name="Given User click on the sign button" classname="Scenario: Creating an account" time="0"/>
+  <testcase name="And Authentication page is populated" classname="Scenario: Creating an account" time="0.001"/>
+  <testcase name="When User enter the email with &quot;david97@testing.com&quot;" classname="Scenario: Creating an account" time="0.001"/>
+  <testcase name="And User click on the Create an account button" classname="Scenario: Creating an account" time="0"/>
+  <testcase name="Then The CREATE AN ACCOUNT page is populated" classname="Scenario: Creating an account" time="0.013">
+    <failure type="java.lang.AssertionError">java.lang.AssertionError
+</failure>
+  </testcase>
+  <testcase name="Scenario: Creating an account" classname="Scenario: Creating an account" time="0.013">
+    <failure type="java.lang.AssertionError">java.lang.AssertionError
+</failure>
+  </testcase>
+  <testcase name="Given The User is on the CREATE AN ACCOUNT page" classname="Scenario: Filling the info" time="0"/>
+  <testcase name="When User choose the title &quot;Mr&quot;" classname="Scenario: Filling the info" time="0.006">
+    <error message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//span[input/@id=&apos;id_gender1&apos;]&quot;}&#10;  (Session info: chrome=92.0.4515.131)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;LAPTOP-750JOEPR&apos;, ip: &apos;192.168.1.101&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_291&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.131, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: C:\Users\102331~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:62973}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: b37caba4d6a40431db4df7672033575f&#10;*** Element info: {Using=xpath, value=//span[input/@id=&apos;id_gender1&apos;]}" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//span[input/@id='id_gender1']"}
+  (Session info: chrome=92.0.4515.131)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-750JOEPR', ip: '192.168.1.101', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.131, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: C:\Users\102331~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:62973}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: b37caba4d6a40431db4df7672033575f
+*** Element info: {Using=xpath, value=//span[input/@id='id_gender1']}
+</error>
+  </testcase>
+  <testcase name="Scenario: Filling the info" classname="Scenario: Filling the info" time="0.01">
+    <error message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//span[input/@id=&apos;id_gender1&apos;]&quot;}&#10;  (Session info: chrome=92.0.4515.131)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;LAPTOP-750JOEPR&apos;, ip: &apos;192.168.1.101&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_291&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.131, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: C:\Users\102331~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:62973}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: b37caba4d6a40431db4df7672033575f&#10;*** Element info: {Using=xpath, value=//span[input/@id=&apos;id_gender1&apos;]}" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//span[input/@id='id_gender1']"}
+  (Session info: chrome=92.0.4515.131)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-750JOEPR', ip: '192.168.1.101', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.131, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: C:\Users\102331~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:62973}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: b37caba4d6a40431db4df7672033575f
+*** Element info: {Using=xpath, value=//span[input/@id='id_gender1']}
+</error>
+  </testcase>
+  <testcase name="And User enter the following details of personal information" classname="Scenario: Filling the info" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="And User select the newsletter checkbox" classname="Scenario: Filling the info" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="And User select the special offers checkbox" classname="Scenario: Filling the info" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="And User enter the following details of the address" classname="Scenario: Filling the info" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="And User click on the Register button" classname="Scenario: Filling the info" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="Then MY ACCOUNT page is populated" classname="Scenario: Filling the info" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="And User click on the sign out button" classname="Scenario: Filling the info" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="Given User click on the sign button" classname="Scenario: Login into the existing account" time="0"/>
+  <testcase name="And Authentication page is populated" classname="Scenario: Login into the existing account" time="0"/>
+  <testcase name="When User enter the email already created with &quot;david97@testing.com&quot;" classname="Scenario: Login into the existing account" time="0"/>
+  <testcase name="And User enter the password with &quot;DS123&quot;" classname="Scenario: Login into the existing account" time="0"/>
+  <testcase name="And User click on the Sign in button" classname="Scenario: Login into the existing account" time="0"/>
+  <testcase name="Then MY ACCOUNT page is populated" classname="Scenario: Login into the existing account" time="0"/>
+  <testcase name="Scenario: Login into the existing account" classname="Scenario: Login into the existing account" time="0"/>
+  <testcase name="Given Home page is triggered" classname="Scenario: The user search for items from the search bar" time="0"/>
+  <testcase name="When User search for some &quot;T-shirt&quot;" classname="Scenario: The user search for items from the search bar" time="0.001"/>
+  <testcase name="And User click on the search button" classname="Scenario: The user search for items from the search bar" time="0"/>
+  <testcase name="And User select the &quot;Faded Short&quot; option" classname="Scenario: The user search for items from the search bar" time="0"/>
+  <testcase name="And User selects the following details for the item" classname="Scenario: The user search for items from the search bar" time="0"/>
+  <testcase name="And User add the products to the cart" classname="Scenario: The user search for items from the search bar" time="0"/>
+  <testcase name="And User click on the Continue shopping button" classname="Scenario: The user search for items from the search bar" time="0"/>
+  <testcase name="Then The user is ready to continue" classname="Scenario: The user search for items from the search bar" time="0"/>
+  <testcase name="Scenario: The user search for items from the search bar" classname="Scenario: The user search for items from the search bar" time="0"/>
+  <testcase name="Given Home page is triggered" classname="Scenario: The user search for items from the category tabs" time="0"/>
+  <testcase name="When User click on the &quot;Blouses&quot; category" classname="Scenario: The user search for items from the category tabs" time="0"/>
+  <testcase name="And User select the &quot;Blouse&quot; option" classname="Scenario: The user search for items from the category tabs" time="0"/>
+  <testcase name="And User selects the following details for the item" classname="Scenario: The user search for items from the category tabs" time="0"/>
+  <testcase name="And User selects the following details for the item" classname="Scenario: The user search for items from the category tabs" time="0.001"/>
+  <testcase name="And User add the products to the cart" classname="Scenario: The user search for items from the category tabs" time="0"/>
+  <testcase name="And User add the products to the cart" classname="Scenario: The user search for items from the category tabs" time="0"/>
+  <testcase name="And User click on the Continue shopping button" classname="Scenario: The user search for items from the category tabs" time="0"/>
+  <testcase name="And User click on the Continue shopping button" classname="Scenario: The user search for items from the category tabs" time="0"/>
+  <testcase name="And User click on the &quot;Evening Dresses&quot; category" classname="Scenario: The user search for items from the category tabs" time="0"/>
+  <testcase name="And User click on the &quot;All specials&quot; small button" classname="Scenario: The user search for items from the category tabs" time="0.001"/>
+  <testcase name="And User select the &quot;Printed Chiffon Dress&quot; option" classname="Scenario: The user search for items from the category tabs" time="0"/>
+  <testcase name="Then The user is ready to continue" classname="Scenario: The user search for items from the category tabs" time="0"/>
+  <testcase name="Scenario: The user search for items from the category tabs" classname="Scenario: The user search for items from the category tabs" time="0"/>
+  <testcase name="Given The user has products in the Cart" classname="Scenario: The user is ready to pay" time="0"/>
+  <testcase name="When User click on the Check out button" classname="Scenario: The user is ready to pay" time="0"/>
+  <testcase name="And User proceeds to checkout" classname="Scenario: The user is ready to pay" time="0"/>
+  <testcase name="And User writes &quot;Be careful with the clothes&quot;" classname="Scenario: The user is ready to pay" time="0"/>
+  <testcase name="And User proceeds to Shipping options" classname="Scenario: The user is ready to pay" time="0"/>
+  <testcase name="And User reads the terms" classname="Scenario: The user is ready to pay" time="0"/>
+  <testcase name="And User select the Terms of service checkbox" classname="Scenario: The user is ready to pay" time="0"/>
+  <testcase name="And User proceeds to the payment" classname="Scenario: The user is ready to pay" time="0"/>
+  <testcase name="And User selects the &quot;bankwire&quot; payment option" classname="Scenario: The user is ready to pay" time="0"/>
+  <testcase name="And User confirms the order" classname="Scenario: The user is ready to pay" time="0.004">
+    <error message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[@class=&apos;button btn btn-default button-medium&apos;]&quot;}&#10;  (Session info: chrome=92.0.4515.131)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;LAPTOP-750JOEPR&apos;, ip: &apos;192.168.1.101&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_291&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.131, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: C:\Users\102331~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:62973}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: b37caba4d6a40431db4df7672033575f&#10;*** Element info: {Using=xpath, value=//button[@class=&apos;button btn btn-default button-medium&apos;]}" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//button[@class='button btn btn-default button-medium']"}
+  (Session info: chrome=92.0.4515.131)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-750JOEPR', ip: '192.168.1.101', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.131, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: C:\Users\102331~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:62973}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: b37caba4d6a40431db4df7672033575f
+*** Element info: {Using=xpath, value=//button[@class='button btn btn-default button-medium']}
+</error>
+  </testcase>
+  <testcase name="Scenario: The user is ready to pay" classname="Scenario: The user is ready to pay" time="0.006">
+    <error message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[@class=&apos;button btn btn-default button-medium&apos;]&quot;}&#10;  (Session info: chrome=92.0.4515.131)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;&#10;System info: host: &apos;LAPTOP-750JOEPR&apos;, ip: &apos;192.168.1.101&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_291&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.131, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: C:\Users\102331~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:62973}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: b37caba4d6a40431db4df7672033575f&#10;*** Element info: {Using=xpath, value=//button[@class=&apos;button btn btn-default button-medium&apos;]}" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//button[@class='button btn btn-default button-medium']"}
+  (Session info: chrome=92.0.4515.131)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-750JOEPR', ip: '192.168.1.101', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.131, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: C:\Users\102331~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:62973}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: b37caba4d6a40431db4df7672033575f
+*** Element info: {Using=xpath, value=//button[@class='button btn btn-default button-medium']}
+</error>
+  </testcase>
+  <testcase name="And User goes to the orders page" classname="Scenario: The user is ready to pay" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="And User checks and confirms the details of the order" classname="Scenario: The user is ready to pay" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="And User downloads the invoice as PDF" classname="Scenario: The user is ready to pay" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="Then The order has been completed successfully" classname="Scenario: The user is ready to pay" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="Given MY ACCOUNT page is populated" classname="Scenario: Sign off from the existing session" time="0">
+    <failure type="java.lang.AssertionError">java.lang.AssertionError
+</failure>
+    <system-out><![CDATA[
+  @E2ETest
+  Scenario: The user is ready to pay                      &amp#27;[90m# E2E.feature:73&amp#27;[0m
+    &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mThe user has products in the Cart&amp#27;[0m               &amp#27;[90m# stepDefination.the_user_has_products_in_the_cart()&amp#27;[0m
+    &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mUser click on the Check out button&amp#27;[0m               &amp#27;[90m# stepDefination.user_click_on_the_check_out_button()&amp#27;[0m
+    &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mUser proceeds to checkout&amp#27;[0m                         &amp#27;[90m# stepDefination.user_proceeds_to_checkout()&amp#27;[0m
+    &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mUser writes "&amp#27;[0m&amp#27;[32m&amp#27;[1mBe careful with the clothes&amp#27;[0m&amp#27;[32m"&amp#27;[0m         &amp#27;[90m# stepDefination.user_writes_something(String)&amp#27;[0m
+    &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mUser proceeds to Shipping options&amp#27;[0m                 &amp#27;[90m# stepDefination.user_proceeds_to_shipping_options()&amp#27;[0m
+    &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mUser reads the terms&amp#27;[0m                              &amp#27;[90m# stepDefination.user_reads_the_terms()&amp#27;[0m
+    &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mUser select the Terms of service checkbox&amp#27;[0m         &amp#27;[90m# stepDefination.user_select_the_terms_of_service_checkbox()&amp#27;[0m
+    &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mUser proceeds to the payment&amp#27;[0m                      &amp#27;[90m# stepDefination.user_proceeds_to_the_payment()&amp#27;[0m
+    &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mUser selects the "&amp#27;[0m&amp#27;[32m&amp#27;[1mbankwire&amp#27;[0m&amp#27;[32m" payment option&amp#27;[0m        &amp#27;[90m# stepDefination.user_selects_the_payment_option(String)&amp#27;[0m
+    &amp#27;[31mAnd &amp#27;[0m&amp#27;[31mUser confirms the order&amp#27;[0m                           &amp#27;[90m# stepDefination.user_confirms_the_order()&amp#27;[0m
+      &amp#27;[31morg.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//button[@class='button btn btn-default button-medium']"}
+        (Session info: chrome=92.0.4515.131)
+      For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+      Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+      System info: host: 'LAPTOP-750JOEPR', ip: '192.168.1.101', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'
+      Driver info: org.openqa.selenium.chrome.ChromeDriver
+      Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.131, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: C:\Users\102331~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:62973}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+      Session ID: b37caba4d6a40431db4df7672033575f
+      *** Element info: {Using=xpath, value=//button[@class='button btn btn-default button-medium']}
+      	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+      	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+      	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+      	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+      	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+      	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+      	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+      	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+      	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+      	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+      	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+      	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+      	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+      	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+      	at Actions.MyStore.confirmOrder(MyStore.java:294)
+      	at stepDefinations.stepDefination.user_confirms_the_order(stepDefination.java:250)
+      	at ?.And User confirms the order(E2E.feature:83)
+      &amp#27;[0m
+    &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mUser goes to the orders page&amp#27;[0m                      &amp#27;[90m# stepDefination.user_goes_to_the_orders_page()&amp#27;[0m
+    &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mUser checks and confirms the details of the order&amp#27;[0m &amp#27;[90m# stepDefination.user_checks_the_details_of_the_order()&amp#27;[0m
+    &amp#27;[36mAnd &amp#27;[0m&amp#27;[36mUser downloads the invoice as PDF&amp#27;[0m                 &amp#27;[90m# stepDefination.user_downloads_the_invoice_as_pdf()&amp#27;[0m
+    &amp#27;[36mThen &amp#27;[0m&amp#27;[36mThe order has been completed successfully&amp#27;[0m        &amp#27;[90m# stepDefination.the_order_has_been_completed_successfully()&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="Scenario: Sign off from the existing session" classname="Scenario: Sign off from the existing session" time="0">
+    <failure type="java.lang.AssertionError">java.lang.AssertionError
+</failure>
+  </testcase>
+  <testcase name="When User click on the sign out button" classname="Scenario: Sign off from the existing session" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="Then The session has been closed sucessfully" classname="Scenario: Sign off from the existing session" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="And The browser closes" classname="Scenario: Sign off from the existing session" time="0">
+    <skipped/>
+  </testcase>
 </testsuite>

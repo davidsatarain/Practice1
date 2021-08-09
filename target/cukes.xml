@@ -1,32 +1,69 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="8" time="198.726826">
-<testcase classname="End-to-end test" name="Validating the browser and the home page" time="8.736997">
+<testsuite failures="4" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="8" time="300.674853">
+<testcase classname="End-to-end test" name="Validating the browser and the home page" time="18.807633">
 <system-out><![CDATA[Given Validate the browser..................................................passed
 When Home page is triggered.................................................passed
 Then Check if the user is on the home page..................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="End-to-end test" name="Creating an account" time="14.990395">
-<system-out><![CDATA[Given User click on the sign button.........................................passed
+<testcase classname="End-to-end test" name="Creating an account" time="25.24331">
+<failure message="java.lang.AssertionError&#13;&#10;&#9;at org.junit.Assert.fail(Assert.java:86)&#13;&#10;&#9;at org.junit.Assert.assertTrue(Assert.java:41)&#13;&#10;&#9;at org.junit.Assert.assertTrue(Assert.java:52)&#13;&#10;&#9;at Actions.MyStore.verifyingCreateAnAccount(MyStore.java:71)&#13;&#10;&#9;at stepDefinations.stepDefination.create_account_page(stepDefination.java:69)&#13;&#10;&#9;at ✽.Then The CREATE AN ACCOUNT page is populated(E2E.feature:16)&#13;&#10;"><![CDATA[Given User click on the sign button.........................................passed
 And Authentication page is populated........................................passed
 When User enter the email with "david97@testing.com"........................passed
 And User click on the Create an account button..............................passed
-Then The CREATE AN ACCOUNT page is populated................................passed
-]]></system-out>
+Then The CREATE AN ACCOUNT page is populated................................failed
+
+StackTrace:
+java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertTrue(Assert.java:52)
+	at Actions.MyStore.verifyingCreateAnAccount(MyStore.java:71)
+	at stepDefinations.stepDefination.create_account_page(stepDefination.java:69)
+	at ✽.Then The CREATE AN ACCOUNT page is populated(E2E.feature:16)
+]]></failure>
 </testcase>
-<testcase classname="End-to-end test" name="Filling the info" time="21.043583">
-<system-out><![CDATA[Given The User is on the CREATE AN ACCOUNT page.............................passed
-When User choose the title "Mr".............................................passed
-And User enter the following details of personal information................passed
-And User select the newsletter checkbox.....................................passed
-And User select the special offers checkbox.................................passed
-And User enter the following details of the address.........................passed
-And User click on the Register button.......................................passed
-Then MY ACCOUNT page is populated...........................................passed
-And User click on the sign out button.......................................passed
-]]></system-out>
+<testcase classname="End-to-end test" name="Filling the info" time="3.113661">
+<failure message="org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//span[input/@id='id_gender1']&quot;}&#10;  (Session info: chrome=92.0.4515.131)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'LAPTOP-750JOEPR', ip: '192.168.1.101', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.131, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: C:\Users\102331~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:62973}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: b37caba4d6a40431db4df7672033575f&#10;*** Element info: {Using=xpath, value=//span[input/@id='id_gender1']}&#13;&#10;&#9;at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#13;&#10;&#9;at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)&#13;&#10;&#9;at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)&#13;&#10;&#9;at java.lang.reflect.Constructor.newInstance(Constructor.java:423)&#13;&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)&#13;&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)&#13;&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)&#13;&#10;&#9;at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)&#13;&#10;&#9;at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)&#13;&#10;&#9;at org.openqa.selenium.By$ByXPath.findElement(By.java:353)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)&#13;&#10;&#9;at Actions.MyStore.selectTitle(MyStore.java:59)&#13;&#10;&#9;at stepDefinations.stepDefination.user_choose_the_title(stepDefination.java:80)&#13;&#10;&#9;at ✽.When User choose the title &quot;Mr&quot;(E2E.feature:22)&#13;&#10;"><![CDATA[Given The User is on the CREATE AN ACCOUNT page.............................passed
+When User choose the title "Mr".............................................failed
+And User enter the following details of personal information................skipped
+And User select the newsletter checkbox.....................................skipped
+And User select the special offers checkbox.................................skipped
+And User enter the following details of the address.........................skipped
+And User click on the Register button.......................................skipped
+Then MY ACCOUNT page is populated...........................................skipped
+And User click on the sign out button.......................................skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//span[input/@id='id_gender1']"}
+  (Session info: chrome=92.0.4515.131)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-750JOEPR', ip: '192.168.1.101', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.131, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: C:\Users\102331~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:62973}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: b37caba4d6a40431db4df7672033575f
+*** Element info: {Using=xpath, value=//span[input/@id='id_gender1']}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at Actions.MyStore.selectTitle(MyStore.java:59)
+	at stepDefinations.stepDefination.user_choose_the_title(stepDefination.java:80)
+	at ✽.When User choose the title "Mr"(E2E.feature:22)
+]]></failure>
 </testcase>
-<testcase classname="End-to-end test" name="Login into the existing account" time="6.039086">
+<testcase classname="End-to-end test" name="Login into the existing account" time="28.14082">
 <system-out><![CDATA[Given User click on the sign button.........................................passed
 And Authentication page is populated........................................passed
 When User enter the email already created with "david97@testing.com"........passed
@@ -35,7 +72,7 @@ And User click on the Sign in button........................................pass
 Then MY ACCOUNT page is populated...........................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="End-to-end test" name="The user search for items from the search bar" time="25.114198">
+<testcase classname="End-to-end test" name="The user search for items from the search bar" time="50.66594">
 <system-out><![CDATA[Given Home page is triggered................................................passed
 When User search for some "T-shirt".........................................passed
 And User click on the search button.........................................passed
@@ -46,7 +83,7 @@ And User click on the Continue shopping button..............................pass
 Then The user is ready to continue..........................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="End-to-end test" name="The user search for items from the category tabs" time="66.501428">
+<testcase classname="End-to-end test" name="The user search for items from the category tabs" time="117.148813">
 <system-out><![CDATA[Given Home page is triggered................................................passed
 When User click on the "Blouses" category...................................passed
 And User select the "Blouse" option.........................................passed
@@ -62,8 +99,8 @@ And User click on the Continue shopping button..............................pass
 Then The user is ready to continue..........................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="End-to-end test" name="The user is ready to pay" time="52.518828">
-<system-out><![CDATA[Given The user has products in the Cart.....................................passed
+<testcase classname="End-to-end test" name="The user is ready to pay" time="57.539275">
+<failure message="org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[@class='button btn btn-default button-medium']&quot;}&#10;  (Session info: chrome=92.0.4515.131)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'LAPTOP-750JOEPR', ip: '192.168.1.101', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.131, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: C:\Users\102331~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:62973}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: b37caba4d6a40431db4df7672033575f&#10;*** Element info: {Using=xpath, value=//button[@class='button btn btn-default button-medium']}&#13;&#10;&#9;at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#13;&#10;&#9;at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)&#13;&#10;&#9;at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)&#13;&#10;&#9;at java.lang.reflect.Constructor.newInstance(Constructor.java:423)&#13;&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)&#13;&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)&#13;&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)&#13;&#10;&#9;at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)&#13;&#10;&#9;at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)&#13;&#10;&#9;at org.openqa.selenium.By$ByXPath.findElement(By.java:353)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)&#13;&#10;&#9;at Actions.MyStore.confirmOrder(MyStore.java:294)&#13;&#10;&#9;at stepDefinations.stepDefination.user_confirms_the_order(stepDefination.java:250)&#13;&#10;&#9;at ✽.And User confirms the order(E2E.feature:83)&#13;&#10;"><![CDATA[Given The user has products in the Cart.....................................passed
 When User click on the Check out button.....................................passed
 And User proceeds to checkout...............................................passed
 And User writes "Be careful with the clothes"...............................passed
@@ -72,18 +109,55 @@ And User reads the terms....................................................pass
 And User select the Terms of service checkbox...............................passed
 And User proceeds to the payment............................................passed
 And User selects the "bankwire" payment option..............................passed
-And User confirms the order.................................................passed
-And User goes to the orders page............................................passed
-And User checks and confirms the details of the order.......................passed
-And User downloads the invoice as PDF.......................................passed
-Then The order has been completed successfully..............................passed
-]]></system-out>
+And User confirms the order.................................................failed
+And User goes to the orders page............................................skipped
+And User checks and confirms the details of the order.......................skipped
+And User downloads the invoice as PDF.......................................skipped
+Then The order has been completed successfully..............................skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//button[@class='button btn btn-default button-medium']"}
+  (Session info: chrome=92.0.4515.131)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-750JOEPR', ip: '192.168.1.101', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.131, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: C:\Users\102331~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:62973}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: b37caba4d6a40431db4df7672033575f
+*** Element info: {Using=xpath, value=//button[@class='button btn btn-default button-medium']}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at Actions.MyStore.confirmOrder(MyStore.java:294)
+	at stepDefinations.stepDefination.user_confirms_the_order(stepDefination.java:250)
+	at ✽.And User confirms the order(E2E.feature:83)
+]]></failure>
 </testcase>
-<testcase classname="End-to-end test" name="Sign off from the existing session" time="3.782311">
-<system-out><![CDATA[Given MY ACCOUNT page is populated..........................................passed
-When User click on the sign out button......................................passed
-Then The session has been closed sucessfully................................passed
-And The browser closes......................................................passed
-]]></system-out>
+<testcase classname="End-to-end test" name="Sign off from the existing session" time="0.015401">
+<failure message="java.lang.AssertionError&#13;&#10;&#9;at org.junit.Assert.fail(Assert.java:86)&#13;&#10;&#9;at org.junit.Assert.assertTrue(Assert.java:41)&#13;&#10;&#9;at org.junit.Assert.assertTrue(Assert.java:52)&#13;&#10;&#9;at Actions.MyStore.verifyingMyAccount(MyStore.java:75)&#13;&#10;&#9;at stepDefinations.stepDefination.my_account_page_is_populated(stepDefination.java:86)&#13;&#10;&#9;at ✽.Given MY ACCOUNT page is populated(E2E.feature:91)&#13;&#10;"><![CDATA[Given MY ACCOUNT page is populated..........................................failed
+When User click on the sign out button......................................skipped
+Then The session has been closed sucessfully................................skipped
+And The browser closes......................................................skipped
+
+StackTrace:
+java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertTrue(Assert.java:52)
+	at Actions.MyStore.verifyingMyAccount(MyStore.java:75)
+	at stepDefinations.stepDefination.my_account_page_is_populated(stepDefination.java:86)
+	at ✽.Given MY ACCOUNT page is populated(E2E.feature:91)
+]]></failure>
 </testcase>
 </testsuite>

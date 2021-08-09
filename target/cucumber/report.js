@@ -39,21 +39,21 @@ formatter.match({
   "location": "stepDefination.validate_the_browser()"
 });
 formatter.result({
-  "duration": 3864946300,
+  "duration": 4326542700,
   "status": "passed"
 });
 formatter.match({
   "location": "stepDefination.browser_is_triggered()"
 });
 formatter.result({
-  "duration": 4856706900,
+  "duration": 14449787700,
   "status": "passed"
 });
 formatter.match({
   "location": "stepDefination.check_home_page()"
 });
 formatter.result({
-  "duration": 15343400,
+  "duration": 31302900,
   "status": "passed"
 });
 formatter.scenario({
@@ -99,14 +99,14 @@ formatter.match({
   "location": "stepDefination.user_click_on_sign_button()"
 });
 formatter.result({
-  "duration": 2707039900,
+  "duration": 12603179400,
   "status": "passed"
 });
 formatter.match({
   "location": "stepDefination.authentication_page()"
 });
 formatter.result({
-  "duration": 12046600,
+  "duration": 27680800,
   "status": "passed"
 });
 formatter.match({
@@ -119,22 +119,23 @@ formatter.match({
   "location": "stepDefination.puttingEmail(String)"
 });
 formatter.result({
-  "duration": 2260701600,
+  "duration": 2586212300,
   "status": "passed"
 });
 formatter.match({
   "location": "stepDefination.clickCreate()"
 });
 formatter.result({
-  "duration": 131200,
+  "duration": 170800,
   "status": "passed"
 });
 formatter.match({
   "location": "stepDefination.create_account_page()"
 });
 formatter.result({
-  "duration": 10010475600,
-  "status": "passed"
+  "duration": 10026066500,
+  "error_message": "java.lang.AssertionError\r\n\tat org.junit.Assert.fail(Assert.java:86)\r\n\tat org.junit.Assert.assertTrue(Assert.java:41)\r\n\tat org.junit.Assert.assertTrue(Assert.java:52)\r\n\tat Actions.MyStore.verifyingCreateAnAccount(MyStore.java:71)\r\n\tat stepDefinations.stepDefination.create_account_page(stepDefination.java:69)\r\n\tat ✽.Then The CREATE AN ACCOUNT page is populated(E2E.feature:16)\r\n",
+  "status": "failed"
 });
 formatter.scenario({
   "line": 20,
@@ -230,7 +231,7 @@ formatter.match({
   "location": "stepDefination.the_create_an_account_page_is_populated()"
 });
 formatter.result({
-  "duration": 75500,
+  "duration": 147500,
   "status": "passed"
 });
 formatter.match({
@@ -243,57 +244,51 @@ formatter.match({
   "location": "stepDefination.user_choose_the_title(String)"
 });
 formatter.result({
-  "duration": 3095012600,
-  "status": "passed"
+  "duration": 3113513800,
+  "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//span[input/@id\u003d\u0027id_gender1\u0027]\"}\n  (Session info: chrome\u003d92.0.4515.131)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027LAPTOP-750JOEPR\u0027, ip: \u0027192.168.1.101\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_291\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.131, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: C:\\Users\\102331~1\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:62973}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: b37caba4d6a40431db4df7672033575f\n*** Element info: {Using\u003dxpath, value\u003d//span[input/@id\u003d\u0027id_gender1\u0027]}\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat Actions.MyStore.selectTitle(MyStore.java:59)\r\n\tat stepDefinations.stepDefination.user_choose_the_title(stepDefination.java:80)\r\n\tat ✽.When User choose the title \"Mr\"(E2E.feature:22)\r\n",
+  "status": "failed"
 });
 formatter.match({
   "location": "stepDefination.user_enter_the_following_details_of_personal_information(DataTable)"
 });
 formatter.result({
-  "duration": 6721417300,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "stepDefination.user_select_the_newsletter_checkbox()"
 });
 formatter.result({
-  "duration": 65777400,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "stepDefination.user_select_the_special_offers_checkbox()"
 });
 formatter.result({
-  "duration": 87167200,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "stepDefination.user_enter_the_following_details_of_the_adress(DataTable)"
 });
 formatter.result({
-  "duration": 5293474500,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "stepDefination.user_click_on_the_register_button()"
 });
 formatter.result({
-  "duration": 1323945600,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "stepDefination.my_account_page_is_populated()"
 });
 formatter.result({
-  "duration": 5359100,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "stepDefination.user_click_on_the_sign_out_button()"
 });
 formatter.result({
-  "duration": 4451353700,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.scenario({
   "line": 34,
@@ -343,14 +338,14 @@ formatter.match({
   "location": "stepDefination.user_click_on_sign_button()"
 });
 formatter.result({
-  "duration": 1670314800,
+  "duration": 12077578400,
   "status": "passed"
 });
 formatter.match({
   "location": "stepDefination.authentication_page()"
 });
 formatter.result({
-  "duration": 9013300,
+  "duration": 16908800,
   "status": "passed"
 });
 formatter.match({
@@ -363,7 +358,7 @@ formatter.match({
   "location": "stepDefination.user_enter_the_email_already_created(String)"
 });
 formatter.result({
-  "duration": 3118308200,
+  "duration": 3367055600,
   "status": "passed"
 });
 formatter.match({
@@ -376,21 +371,21 @@ formatter.match({
   "location": "stepDefination.user_enter_the_password_already_setted(String)"
 });
 formatter.result({
-  "duration": 96576000,
+  "duration": 183694000,
   "status": "passed"
 });
 formatter.match({
   "location": "stepDefination.user_click_on_the_sing_in_button()"
 });
 formatter.result({
-  "duration": 1141413900,
+  "duration": 12477864100,
   "status": "passed"
 });
 formatter.match({
   "location": "stepDefination.my_account_page_is_populated()"
 });
 formatter.result({
-  "duration": 3459400,
+  "duration": 17718800,
   "status": "passed"
 });
 formatter.scenario({
@@ -461,7 +456,7 @@ formatter.match({
   "location": "stepDefination.browser_is_triggered()"
 });
 formatter.result({
-  "duration": 1773115400,
+  "duration": 11740235100,
   "status": "passed"
 });
 formatter.match({
@@ -474,14 +469,14 @@ formatter.match({
   "location": "stepDefination.user_search_for_some_something(String)"
 });
 formatter.result({
-  "duration": 169318900,
+  "duration": 197738300,
   "status": "passed"
 });
 formatter.match({
   "location": "stepDefination.user_click_on_the_search_button()"
 });
 formatter.result({
-  "duration": 1168917600,
+  "duration": 8288914000,
   "status": "passed"
 });
 formatter.match({
@@ -494,35 +489,35 @@ formatter.match({
   "location": "stepDefination.user_select_the_something_option(String)"
 });
 formatter.result({
-  "duration": 6408841100,
+  "duration": 13758523300,
   "status": "passed"
 });
 formatter.match({
   "location": "stepDefination.user_selects_the_following_details_for_the_item(DataTable)"
 });
 formatter.result({
-  "duration": 2410763900,
+  "duration": 3237337900,
   "status": "passed"
 });
 formatter.match({
   "location": "stepDefination.user_add_the_products_to_the_cart()"
 });
 formatter.result({
-  "duration": 3093267500,
+  "duration": 3235622800,
   "status": "passed"
 });
 formatter.match({
   "location": "stepDefination.user_click_on_the_continue_shopping_button()"
 });
 formatter.result({
-  "duration": 10089920700,
+  "duration": 10207374100,
   "status": "passed"
 });
 formatter.match({
   "location": "stepDefination.the_item_is_on_the_shopping_cart()"
 });
 formatter.result({
-  "duration": 53000,
+  "duration": 194200,
   "status": "passed"
 });
 formatter.scenario({
@@ -628,7 +623,7 @@ formatter.match({
   "location": "stepDefination.browser_is_triggered()"
 });
 formatter.result({
-  "duration": 1864663600,
+  "duration": 9628621500,
   "status": "passed"
 });
 formatter.match({
@@ -641,7 +636,7 @@ formatter.match({
   "location": "stepDefination.user_click_on_the_something_category(String)"
 });
 formatter.result({
-  "duration": 7686207900,
+  "duration": 16281288400,
   "status": "passed"
 });
 formatter.match({
@@ -654,28 +649,28 @@ formatter.match({
   "location": "stepDefination.user_select_the_something_option(String)"
 });
 formatter.result({
-  "duration": 6483186000,
+  "duration": 15228976500,
   "status": "passed"
 });
 formatter.match({
   "location": "stepDefination.user_selects_the_following_details_for_the_item(DataTable)"
 });
 formatter.result({
-  "duration": 2377732700,
+  "duration": 2924811000,
   "status": "passed"
 });
 formatter.match({
   "location": "stepDefination.user_add_the_products_to_the_cart()"
 });
 formatter.result({
-  "duration": 3090461400,
+  "duration": 3240569200,
   "status": "passed"
 });
 formatter.match({
   "location": "stepDefination.user_click_on_the_continue_shopping_button()"
 });
 formatter.result({
-  "duration": 10092060700,
+  "duration": 10192477400,
   "status": "passed"
 });
 formatter.match({
@@ -688,7 +683,7 @@ formatter.match({
   "location": "stepDefination.user_click_on_the_something_category(String)"
 });
 formatter.result({
-  "duration": 7554722200,
+  "duration": 15747256500,
   "status": "passed"
 });
 formatter.match({
@@ -701,7 +696,7 @@ formatter.match({
   "location": "stepDefination.user_click_on_the_something_small_button(String)"
 });
 formatter.result({
-  "duration": 5407616300,
+  "duration": 13313467700,
   "status": "passed"
 });
 formatter.match({
@@ -714,35 +709,35 @@ formatter.match({
   "location": "stepDefination.user_select_the_something_option(String)"
 });
 formatter.result({
-  "duration": 6459194200,
+  "duration": 14395747900,
   "status": "passed"
 });
 formatter.match({
   "location": "stepDefination.user_selects_the_following_details_for_the_item(DataTable)"
 });
 formatter.result({
-  "duration": 2315507300,
+  "duration": 2741052200,
   "status": "passed"
 });
 formatter.match({
   "location": "stepDefination.user_add_the_products_to_the_cart()"
 });
 formatter.result({
-  "duration": 3092456100,
+  "duration": 3251466200,
   "status": "passed"
 });
 formatter.match({
   "location": "stepDefination.user_click_on_the_continue_shopping_button()"
 });
 formatter.result({
-  "duration": 10077539300,
+  "duration": 10202963100,
   "status": "passed"
 });
 formatter.match({
   "location": "stepDefination.the_item_is_on_the_shopping_cart()"
 });
 formatter.result({
-  "duration": 80600,
+  "duration": 115700,
   "status": "passed"
 });
 formatter.scenario({
@@ -833,21 +828,21 @@ formatter.match({
   "location": "stepDefination.the_user_has_products_in_the_cart()"
 });
 formatter.result({
-  "duration": 1220179100,
+  "duration": 1319867400,
   "status": "passed"
 });
 formatter.match({
   "location": "stepDefination.user_click_on_the_check_out_button()"
 });
 formatter.result({
-  "duration": 1261271700,
+  "duration": 10490885500,
   "status": "passed"
 });
 formatter.match({
   "location": "stepDefination.user_proceeds_to_checkout()"
 });
 formatter.result({
-  "duration": 2201824300,
+  "duration": 8883854600,
   "status": "passed"
 });
 formatter.match({
@@ -860,35 +855,35 @@ formatter.match({
   "location": "stepDefination.user_writes_something(String)"
 });
 formatter.result({
-  "duration": 1175501000,
+  "duration": 1296780800,
   "status": "passed"
 });
 formatter.match({
   "location": "stepDefination.user_proceeds_to_shipping_options()"
 });
 formatter.result({
-  "duration": 2963572600,
+  "duration": 11259991000,
   "status": "passed"
 });
 formatter.match({
   "location": "stepDefination.user_reads_the_terms()"
 });
 formatter.result({
-  "duration": 8296577400,
+  "duration": 8658978000,
   "status": "passed"
 });
 formatter.match({
   "location": "stepDefination.user_select_the_terms_of_service_checkbox()"
 });
 formatter.result({
-  "duration": 1094751700,
+  "duration": 1194415100,
   "status": "passed"
 });
 formatter.match({
   "location": "stepDefination.user_proceeds_to_the_payment()"
 });
 formatter.result({
-  "duration": 3004252500,
+  "duration": 9945027200,
   "status": "passed"
 });
 formatter.match({
@@ -901,43 +896,40 @@ formatter.match({
   "location": "stepDefination.user_selects_the_payment_option(String)"
 });
 formatter.result({
-  "duration": 2793989600,
+  "duration": 2425385700,
   "status": "passed"
 });
 formatter.match({
   "location": "stepDefination.user_confirms_the_order()"
 });
 formatter.result({
-  "duration": 4008117600,
-  "status": "passed"
+  "duration": 2064089500,
+  "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//button[@class\u003d\u0027button btn btn-default button-medium\u0027]\"}\n  (Session info: chrome\u003d92.0.4515.131)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027LAPTOP-750JOEPR\u0027, ip: \u0027192.168.1.101\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_291\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.131, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: C:\\Users\\102331~1\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:62973}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: b37caba4d6a40431db4df7672033575f\n*** Element info: {Using\u003dxpath, value\u003d//button[@class\u003d\u0027button btn btn-default button-medium\u0027]}\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat Actions.MyStore.confirmOrder(MyStore.java:294)\r\n\tat stepDefinations.stepDefination.user_confirms_the_order(stepDefination.java:250)\r\n\tat ✽.And User confirms the order(E2E.feature:83)\r\n",
+  "status": "failed"
 });
 formatter.match({
   "location": "stepDefination.user_goes_to_the_orders_page()"
 });
 formatter.result({
-  "duration": 6249202100,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "stepDefination.user_checks_the_details_of_the_order()"
 });
 formatter.result({
-  "duration": 5122280700,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "stepDefination.user_downloads_the_invoice_as_pdf()"
 });
 formatter.result({
-  "duration": 10122032100,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "stepDefination.the_order_has_been_completed_successfully()"
 });
 formatter.result({
-  "duration": 3005275800,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.scenario({
   "line": 90,
@@ -977,28 +969,26 @@ formatter.match({
   "location": "stepDefination.my_account_page_is_populated()"
 });
 formatter.result({
-  "duration": 11617500,
-  "status": "passed"
+  "duration": 15400600,
+  "error_message": "java.lang.AssertionError\r\n\tat org.junit.Assert.fail(Assert.java:86)\r\n\tat org.junit.Assert.assertTrue(Assert.java:41)\r\n\tat org.junit.Assert.assertTrue(Assert.java:52)\r\n\tat Actions.MyStore.verifyingMyAccount(MyStore.java:75)\r\n\tat stepDefinations.stepDefination.my_account_page_is_populated(stepDefination.java:86)\r\n\tat ✽.Given MY ACCOUNT page is populated(E2E.feature:91)\r\n",
+  "status": "failed"
 });
 formatter.match({
   "location": "stepDefination.user_click_on_the_sign_out_button()"
 });
 formatter.result({
-  "duration": 3616993600,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "stepDefination.the_session_has_been_closed_sucessfully()"
 });
 formatter.result({
-  "duration": 10465300,
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.match({
   "location": "stepDefination.the_browser_closes()"
 });
 formatter.result({
-  "duration": 143234700,
-  "status": "passed"
+  "status": "skipped"
 });
 });
