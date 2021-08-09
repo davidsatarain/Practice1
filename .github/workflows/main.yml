@@ -17,6 +17,14 @@ jobs:
       uses: actions/setup-java@v1
       with:
         java-version: '1.8'
+        
+    - name: Set up Google Chrome
+      uses: browser-actions/setup-chrome@92.0.4515.131
+    
+    - name: Set up ChromeDriver
+      uses: nanasess/setup-chromedriver@master
+      with:
+        chromedriver-version: '92.0.4515.107'
     
     - name: Build with Maven
       run: mvn -B package --file pom.xml
