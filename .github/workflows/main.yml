@@ -22,7 +22,7 @@ jobs:
       uses: browser-actions/setup-chrome@latest
     
     - name: setup-chromedriver
-      uses: nanasess/setup-chromedriver@latest
+      uses: nanasess/setup-chromedriver@v1.0.1
         
     - name: Build with Maven
       run: mvn -B package --file pom.xml
