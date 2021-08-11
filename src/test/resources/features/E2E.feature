@@ -11,7 +11,7 @@ Feature: End-to-end test
   Scenario: Creating an account
     Given User click on the sign button 
     	And Authentication page is populated
-     When User enter the email with "CItest@testing.com"
+     When User enter the email with "deivid123@testing.com"
       And User click on the Create an account button
      Then The CREATE AN ACCOUNT page is populated
      
@@ -34,7 +34,7 @@ Feature: End-to-end test
   Scenario: Login into the existing account
     Given User click on the sign button 
     	And Authentication page is populated
-     When User enter the email already created with "CItest@testing.com"
+     When User enter the email already created with "deivid123@testing.com"
       And User enter the password with "DS123"
       And User click on the Sign in button
      Then MY ACCOUNT page is populated

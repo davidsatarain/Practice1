@@ -23,13 +23,13 @@ public class MyStore extends Base{
 	private String reference;
 	
 	public void launchBrowser() {
-		//System.setProperty("webdriver.chrome.driver", "C:\\Users\\102331781\\Documents\\chromedriver.exe");
-		WebDriverManager.chromedriver().setup();
-		ChromeOptions options = new ChromeOptions();
-		options.addArguments("--no-sandbox");
-		options.addArguments("--disable-dev-shm-usage");
-		options.addArguments("--headless");
-		driver = new ChromeDriver(options);
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\102331781\\Documents\\chromedriver.exe");
+		//WebDriverManager.chromedriver().setup();
+		//ChromeOptions options = new ChromeOptions();
+		//options.addArguments("--no-sandbox");
+		//options.addArguments("--disable-dev-shm-usage");
+		//options.addArguments("--headless");
+		driver = new ChromeDriver();
 		driver.manage().window().maximize();
 	}
 	
@@ -78,7 +78,8 @@ public class MyStore extends Base{
 		Assert.assertTrue(driver.getCurrentUrl().contains("http://automationpractice.com/index.php?controller=authentication&back=my-account#account-creation"));
 	}
 	
-	public void verifyingMyAccount() {
+	public void verifyingMyAccount() throws InterruptedException {
+		Thread.sleep(5000);
 		Assert.assertTrue(driver.getCurrentUrl().contains("http://automationpractice.com/index.php?controller=my-account"));
 	}
 	
@@ -303,24 +304,24 @@ public class MyStore extends Base{
 	}
 	
 	public void backToOrders() throws InterruptedException, IOException {
-		Thread.sleep(5000);
+		Thread.sleep(10000);
 		driver.findElement(By.xpath("//a[@class='button-exclusive btn btn-default']")).click();
 	}
 	
 	public void checkingOrder() throws InterruptedException {
-		Thread.sleep(5000);
+		Thread.sleep(10000);
 				
 		List<WebElement> rows = driver.findElements(By.xpath("//tr"));
 		
 		for(int i=0;i<rows.size();i++) {
 			
-			if(i==1) {
+			if(rows.get(i).getAttribute("class")=="first_item") {
 				
 				List<WebElement> columns = rows.get(i).findElements(By.xpath("//td"));
 				
 				for(int j=0;j<columns.size();j++) {
 					if(j==6) {
-						columns.get(j).findElement(By.cssSelector("a.btn.btn-default.button.button-small")).click();
+						columns.get(j).findElement(By.xpath("//a[@class='btn btn-default button button-small']")).click();
 					}
 				}
 
@@ -346,7 +347,7 @@ public class MyStore extends Base{
 	}
 	
 	public void finishing() throws InterruptedException {
-		Thread.sleep(2000);
+		Thread.sleep(5000);
 		
 		List<WebElement> buttons = driver.findElements(By.xpath("//a[@href='http://automationpractice.com/index.php?controller=my-account']"));
 		

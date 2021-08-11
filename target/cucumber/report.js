@@ -39,21 +39,21 @@ formatter.match({
   "location": "stepDefination.validate_the_browser()"
 });
 formatter.result({
-  "duration": 5131610200,
+  "duration": 5106209000,
   "status": "passed"
 });
 formatter.match({
   "location": "stepDefination.browser_is_triggered()"
 });
 formatter.result({
-  "duration": 3079189500,
+  "duration": 4356745000,
   "status": "passed"
 });
 formatter.match({
   "location": "stepDefination.check_home_page()"
 });
 formatter.result({
-  "duration": 13228100,
+  "duration": 31612500,
   "status": "passed"
 });
 formatter.scenario({
@@ -82,7 +82,7 @@ formatter.step({
 });
 formatter.step({
   "line": 14,
-  "name": "User enter the email with \"david97@testing.com\"",
+  "name": "User enter the email with \"CItest5@testing.com\"",
   "keyword": "When "
 });
 formatter.step({
@@ -99,41 +99,41 @@ formatter.match({
   "location": "stepDefination.user_click_on_sign_button()"
 });
 formatter.result({
-  "duration": 1554427200,
+  "duration": 1937385100,
   "status": "passed"
 });
 formatter.match({
   "location": "stepDefination.authentication_page()"
 });
 formatter.result({
-  "duration": 33753200,
+  "duration": 27086700,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "david97@testing.com",
+      "val": "CItest5@testing.com",
       "offset": 27
     }
   ],
   "location": "stepDefination.puttingEmail(String)"
 });
 formatter.result({
-  "duration": 2465154900,
+  "duration": 2561140400,
   "status": "passed"
 });
 formatter.match({
   "location": "stepDefination.clickCreate()"
 });
 formatter.result({
-  "duration": 213200,
+  "duration": 178600,
   "status": "passed"
 });
 formatter.match({
   "location": "stepDefination.create_account_page()"
 });
 formatter.result({
-  "duration": 10023341900,
+  "duration": 10025765300,
   "error_message": "java.lang.AssertionError\r\n\tat org.junit.Assert.fail(Assert.java:86)\r\n\tat org.junit.Assert.assertTrue(Assert.java:41)\r\n\tat org.junit.Assert.assertTrue(Assert.java:52)\r\n\tat Actions.MyStore.verifyingCreateAnAccount(MyStore.java:78)\r\n\tat stepDefinations.stepDefination.create_account_page(stepDefination.java:69)\r\n\tat ✽.Then The CREATE AN ACCOUNT page is populated(E2E.feature:16)\r\n",
   "status": "failed"
 });
@@ -231,7 +231,7 @@ formatter.match({
   "location": "stepDefination.the_create_an_account_page_is_populated()"
 });
 formatter.result({
-  "duration": 207500,
+  "duration": 181300,
   "status": "passed"
 });
 formatter.match({
@@ -244,8 +244,8 @@ formatter.match({
   "location": "stepDefination.user_choose_the_title(String)"
 });
 formatter.result({
-  "duration": 3096236100,
-  "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//span[input/@id\u003d\u0027id_gender1\u0027]\"}\n  (Session info: headless chrome\u003d92.0.4515.131)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027LAPTOP-750JOEPR\u0027, ip: \u0027192.168.1.101\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_291\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.131, chrome: {chromedriverVersion: 92.0.4515.107 (87a818b10553..., userDataDir: C:\\Users\\102331~1\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:57545}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 93b21e72ce7cd4b6540fbe43672e6b77\n*** Element info: {Using\u003dxpath, value\u003d//span[input/@id\u003d\u0027id_gender1\u0027]}\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)\r\n\tat java.lang.reflect.Constructor.newInstance(Unknown Source)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat Actions.MyStore.selectTitle(MyStore.java:66)\r\n\tat stepDefinations.stepDefination.user_choose_the_title(stepDefination.java:80)\r\n\tat ✽.When User choose the title \"Mr\"(E2E.feature:22)\r\n",
+  "duration": 3093756000,
+  "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//span[input/@id\u003d\u0027id_gender1\u0027]\"}\n  (Session info: chrome\u003d92.0.4515.131)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027LAPTOP-750JOEPR\u0027, ip: \u0027192.168.1.101\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_291\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.131, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: C:\\Users\\102331~1\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:57979}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 71f23f0e1c4e48f30aa0cb5e0fbd840d\n*** Element info: {Using\u003dxpath, value\u003d//span[input/@id\u003d\u0027id_gender1\u0027]}\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)\r\n\tat java.lang.reflect.Constructor.newInstance(Unknown Source)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat Actions.MyStore.selectTitle(MyStore.java:66)\r\n\tat stepDefinations.stepDefination.user_choose_the_title(stepDefination.java:80)\r\n\tat ✽.When User choose the title \"Mr\"(E2E.feature:22)\r\n",
   "status": "failed"
 });
 formatter.match({
@@ -316,7 +316,7 @@ formatter.step({
 });
 formatter.step({
   "line": 37,
-  "name": "User enter the email already created with \"david97@testing.com\"",
+  "name": "User enter the email already created with \"CItest5@testing.com\"",
   "keyword": "When "
 });
 formatter.step({
@@ -338,27 +338,27 @@ formatter.match({
   "location": "stepDefination.user_click_on_sign_button()"
 });
 formatter.result({
-  "duration": 3364599100,
+  "duration": 2510943300,
   "status": "passed"
 });
 formatter.match({
   "location": "stepDefination.authentication_page()"
 });
 formatter.result({
-  "duration": 12185100,
+  "duration": 11473800,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
-      "val": "david97@testing.com",
+      "val": "CItest5@testing.com",
       "offset": 43
     }
   ],
   "location": "stepDefination.user_enter_the_email_already_created(String)"
 });
 formatter.result({
-  "duration": 3243038000,
+  "duration": 3224255400,
   "status": "passed"
 });
 formatter.match({
@@ -371,21 +371,21 @@ formatter.match({
   "location": "stepDefination.user_enter_the_password_already_setted(String)"
 });
 formatter.result({
-  "duration": 215842200,
+  "duration": 200650800,
   "status": "passed"
 });
 formatter.match({
   "location": "stepDefination.user_click_on_the_sing_in_button()"
 });
 formatter.result({
-  "duration": 3407719100,
+  "duration": 2073420500,
   "status": "passed"
 });
 formatter.match({
   "location": "stepDefination.my_account_page_is_populated()"
 });
 formatter.result({
-  "duration": 13786500,
+  "duration": 5022200000,
   "status": "passed"
 });
 formatter.scenario({
@@ -456,7 +456,7 @@ formatter.match({
   "location": "stepDefination.browser_is_triggered()"
 });
 formatter.result({
-  "duration": 2174045000,
+  "duration": 1967414600,
   "status": "passed"
 });
 formatter.match({
@@ -469,14 +469,14 @@ formatter.match({
   "location": "stepDefination.user_search_for_some_something(String)"
 });
 formatter.result({
-  "duration": 269724300,
+  "duration": 282588700,
   "status": "passed"
 });
 formatter.match({
   "location": "stepDefination.user_click_on_the_search_button()"
 });
 formatter.result({
-  "duration": 1334474500,
+  "duration": 1954645600,
   "status": "passed"
 });
 formatter.match({
@@ -487,4 +487,513 @@ formatter.match({
     }
   ],
   "location": "stepDefination.user_select_the_something_option(String)"
+});
+formatter.result({
+  "duration": 7218712200,
+  "status": "passed"
+});
+formatter.match({
+  "location": "stepDefination.user_selects_the_following_details_for_the_item(DataTable)"
+});
+formatter.result({
+  "duration": 2985159600,
+  "status": "passed"
+});
+formatter.match({
+  "location": "stepDefination.user_add_the_products_to_the_cart()"
+});
+formatter.result({
+  "duration": 3139478200,
+  "status": "passed"
+});
+formatter.match({
+  "location": "stepDefination.user_click_on_the_continue_shopping_button()"
+});
+formatter.result({
+  "duration": 10157591800,
+  "status": "passed"
+});
+formatter.match({
+  "location": "stepDefination.the_item_is_on_the_shopping_cart()"
+});
+formatter.result({
+  "duration": 159900,
+  "status": "passed"
+});
+formatter.scenario({
+  "line": 55,
+  "name": "The user search for items from the category tabs",
+  "description": "",
+  "id": "end-to-end-test;the-user-search-for-items-from-the-category-tabs",
+  "type": "scenario",
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "line": 54,
+      "name": "@E2ETest"
+    }
+  ]
+});
+formatter.step({
+  "line": 56,
+  "name": "Home page is triggered",
+  "keyword": "Given "
+});
+formatter.step({
+  "line": 57,
+  "name": "User click on the \"Blouses\" category",
+  "keyword": "When "
+});
+formatter.step({
+  "line": 58,
+  "name": "User select the \"Blouse\" option",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 59,
+  "name": "User selects the following details for the item",
+  "rows": [
+    {
+      "cells": [
+        "3",
+        "L",
+        "Black"
+      ],
+      "line": 60
+    }
+  ],
+  "keyword": "And "
+});
+formatter.step({
+  "line": 61,
+  "name": "User add the products to the cart",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 62,
+  "name": "User click on the Continue shopping button",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 63,
+  "name": "User click on the \"Evening Dresses\" category",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 64,
+  "name": "User click on the \"All specials\" small button",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 65,
+  "name": "User select the \"Printed Chiffon Dress\" option",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 66,
+  "name": "User selects the following details for the item",
+  "rows": [
+    {
+      "cells": [
+        "1",
+        "S",
+        "Green"
+      ],
+      "line": 67
+    }
+  ],
+  "keyword": "And "
+});
+formatter.step({
+  "line": 68,
+  "name": "User add the products to the cart",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 69,
+  "name": "User click on the Continue shopping button",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 70,
+  "name": "The user is ready to continue",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "stepDefination.browser_is_triggered()"
+});
+formatter.result({
+  "duration": 3606710200,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Blouses",
+      "offset": 19
+    }
+  ],
+  "location": "stepDefination.user_click_on_the_something_category(String)"
+});
+formatter.result({
+  "duration": 9862796100,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Blouse",
+      "offset": 17
+    }
+  ],
+  "location": "stepDefination.user_select_the_something_option(String)"
+});
+formatter.result({
+  "duration": 7307060100,
+  "status": "passed"
+});
+formatter.match({
+  "location": "stepDefination.user_selects_the_following_details_for_the_item(DataTable)"
+});
+formatter.result({
+  "duration": 3161712500,
+  "status": "passed"
+});
+formatter.match({
+  "location": "stepDefination.user_add_the_products_to_the_cart()"
+});
+formatter.result({
+  "duration": 3274900000,
+  "status": "passed"
+});
+formatter.match({
+  "location": "stepDefination.user_click_on_the_continue_shopping_button()"
+});
+formatter.result({
+  "duration": 10208263900,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Evening Dresses",
+      "offset": 19
+    }
+  ],
+  "location": "stepDefination.user_click_on_the_something_category(String)"
+});
+formatter.result({
+  "duration": 9277944400,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "All specials",
+      "offset": 19
+    }
+  ],
+  "location": "stepDefination.user_click_on_the_something_small_button(String)"
+});
+formatter.result({
+  "duration": 7065803600,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Printed Chiffon Dress",
+      "offset": 17
+    }
+  ],
+  "location": "stepDefination.user_select_the_something_option(String)"
+});
+formatter.result({
+  "duration": 7229808300,
+  "status": "passed"
+});
+formatter.match({
+  "location": "stepDefination.user_selects_the_following_details_for_the_item(DataTable)"
+});
+formatter.result({
+  "duration": 2927796000,
+  "status": "passed"
+});
+formatter.match({
+  "location": "stepDefination.user_add_the_products_to_the_cart()"
+});
+formatter.result({
+  "duration": 3273482100,
+  "status": "passed"
+});
+formatter.match({
+  "location": "stepDefination.user_click_on_the_continue_shopping_button()"
+});
+formatter.result({
+  "duration": 10205713700,
+  "status": "passed"
+});
+formatter.match({
+  "location": "stepDefination.the_item_is_on_the_shopping_cart()"
+});
+formatter.result({
+  "duration": 175000,
+  "status": "passed"
+});
+formatter.scenario({
+  "line": 73,
+  "name": "The user is ready to pay",
+  "description": "",
+  "id": "end-to-end-test;the-user-is-ready-to-pay",
+  "type": "scenario",
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "line": 72,
+      "name": "@E2ETest"
+    }
+  ]
+});
+formatter.step({
+  "line": 74,
+  "name": "The user has products in the Cart",
+  "keyword": "Given "
+});
+formatter.step({
+  "line": 75,
+  "name": "User click on the Check out button",
+  "keyword": "When "
+});
+formatter.step({
+  "line": 76,
+  "name": "User proceeds to checkout",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 77,
+  "name": "User writes \"Be careful with the clothes\"",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 78,
+  "name": "User proceeds to Shipping options",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 79,
+  "name": "User reads the terms",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 80,
+  "name": "User select the Terms of service checkbox",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 81,
+  "name": "User proceeds to the payment",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 82,
+  "name": "User selects the \"bankwire\" payment option",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 83,
+  "name": "User confirms the order",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 84,
+  "name": "User goes to the orders page",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 85,
+  "name": "User checks and confirms the details of the order",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 86,
+  "name": "User downloads the invoice as PDF",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 87,
+  "name": "The order has been completed successfully",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "stepDefination.the_user_has_products_in_the_cart()"
+});
+formatter.result({
+  "duration": 1316219600,
+  "status": "passed"
+});
+formatter.match({
+  "location": "stepDefination.user_click_on_the_check_out_button()"
+});
+formatter.result({
+  "duration": 1882071100,
+  "status": "passed"
+});
+formatter.match({
+  "location": "stepDefination.user_proceeds_to_checkout()"
+});
+formatter.result({
+  "duration": 2960696300,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Be careful with the clothes",
+      "offset": 13
+    }
+  ],
+  "location": "stepDefination.user_writes_something(String)"
+});
+formatter.result({
+  "duration": 1321031300,
+  "status": "passed"
+});
+formatter.match({
+  "location": "stepDefination.user_proceeds_to_shipping_options()"
+});
+formatter.result({
+  "duration": 3532686700,
+  "status": "passed"
+});
+formatter.match({
+  "location": "stepDefination.user_reads_the_terms()"
+});
+formatter.result({
+  "duration": 8706356200,
+  "status": "passed"
+});
+formatter.match({
+  "location": "stepDefination.user_select_the_terms_of_service_checkbox()"
+});
+formatter.result({
+  "duration": 1223688500,
+  "status": "passed"
+});
+formatter.match({
+  "location": "stepDefination.user_proceeds_to_the_payment()"
+});
+formatter.result({
+  "duration": 3261634900,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "bankwire",
+      "offset": 18
+    }
+  ],
+  "location": "stepDefination.user_selects_the_payment_option(String)"
+});
+formatter.result({
+  "duration": 4608274900,
+  "status": "passed"
+});
+formatter.match({
+  "location": "stepDefination.user_confirms_the_order()"
+});
+formatter.result({
+  "duration": 4338375400,
+  "status": "passed"
+});
+formatter.match({
+  "location": "stepDefination.user_goes_to_the_orders_page()"
+});
+formatter.result({
+  "duration": 12383725200,
+  "status": "passed"
+});
+formatter.match({
+  "location": "stepDefination.user_checks_the_details_of_the_order()"
+});
+formatter.result({
+  "duration": 615700,
+  "status": "passed"
+});
+formatter.match({
+  "location": "stepDefination.user_downloads_the_invoice_as_pdf()"
+});
+formatter.result({
+  "duration": 183700,
+  "status": "passed"
+});
+formatter.match({
+  "location": "stepDefination.the_order_has_been_completed_successfully()"
+});
+formatter.result({
+  "duration": 6770428900,
+  "status": "passed"
+});
+formatter.scenario({
+  "line": 90,
+  "name": "Sign off from the existing session",
+  "description": "",
+  "id": "end-to-end-test;sign-off-from-the-existing-session",
+  "type": "scenario",
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "line": 89,
+      "name": "@E2ETest"
+    }
+  ]
+});
+formatter.step({
+  "line": 91,
+  "name": "MY ACCOUNT page is populated",
+  "keyword": "Given "
+});
+formatter.step({
+  "line": 92,
+  "name": "User click on the sign out button",
+  "keyword": "When "
+});
+formatter.step({
+  "line": 93,
+  "name": "The session has been closed sucessfully",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 94,
+  "name": "The browser closes",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "stepDefination.my_account_page_is_populated()"
+});
+formatter.result({
+  "duration": 5020439000,
+  "status": "passed"
+});
+formatter.match({
+  "location": "stepDefination.user_click_on_the_sign_out_button()"
+});
+formatter.result({
+  "duration": 5819125000,
+  "status": "passed"
+});
+formatter.match({
+  "location": "stepDefination.the_session_has_been_closed_sucessfully()"
+});
+formatter.result({
+  "duration": 14420300,
+  "status": "passed"
+});
+formatter.match({
+  "location": "stepDefination.the_browser_closes()"
+});
+formatter.result({
+  "duration": 330604700,
+  "status": "passed"
+});
 });

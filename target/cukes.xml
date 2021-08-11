@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="2" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="8" time="208.781497">
+<testcase classname="End-to-end test" name="Validating the browser and the home page" time="9.494566">
+<system-out><![CDATA[Given Validate the browser..................................................passed
+When Home page is triggered.................................................passed
+Then Check if the user is on the home page..................................passed
+]]></system-out>
+</testcase>
+<testcase classname="End-to-end test" name="Creating an account" time="14.551556">
+<failure message="java.lang.AssertionError&#13;&#10;&#9;at org.junit.Assert.fail(Assert.java:86)&#13;&#10;&#9;at org.junit.Assert.assertTrue(Assert.java:41)&#13;&#10;&#9;at org.junit.Assert.assertTrue(Assert.java:52)&#13;&#10;&#9;at Actions.MyStore.verifyingCreateAnAccount(MyStore.java:78)&#13;&#10;&#9;at stepDefinations.stepDefination.create_account_page(stepDefination.java:69)&#13;&#10;&#9;at ✽.Then The CREATE AN ACCOUNT page is populated(E2E.feature:16)&#13;&#10;"><![CDATA[Given User click on the sign button.........................................passed
+And Authentication page is populated........................................passed
+When User enter the email with "CItest5@testing.com"........................passed
+And User click on the Create an account button..............................passed
+Then The CREATE AN ACCOUNT page is populated................................failed
+
+StackTrace:
+java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertTrue(Assert.java:52)
+	at Actions.MyStore.verifyingCreateAnAccount(MyStore.java:78)
+	at stepDefinations.stepDefination.create_account_page(stepDefination.java:69)
+	at ✽.Then The CREATE AN ACCOUNT page is populated(E2E.feature:16)
+]]></failure>
+</testcase>
+<testcase classname="End-to-end test" name="Filling the info" time="3.093937">
+<failure message="org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//span[input/@id='id_gender1']&quot;}&#10;  (Session info: chrome=92.0.4515.131)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'LAPTOP-750JOEPR', ip: '192.168.1.101', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.131, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: C:\Users\102331~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:57979}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 71f23f0e1c4e48f30aa0cb5e0fbd840d&#10;*** Element info: {Using=xpath, value=//span[input/@id='id_gender1']}&#13;&#10;&#9;at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#13;&#10;&#9;at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)&#13;&#10;&#9;at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)&#13;&#10;&#9;at java.lang.reflect.Constructor.newInstance(Unknown Source)&#13;&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)&#13;&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)&#13;&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)&#13;&#10;&#9;at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)&#13;&#10;&#9;at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)&#13;&#10;&#9;at org.openqa.selenium.By$ByXPath.findElement(By.java:353)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)&#13;&#10;&#9;at Actions.MyStore.selectTitle(MyStore.java:66)&#13;&#10;&#9;at stepDefinations.stepDefination.user_choose_the_title(stepDefination.java:80)&#13;&#10;&#9;at ✽.When User choose the title &quot;Mr&quot;(E2E.feature:22)&#13;&#10;"><![CDATA[Given The User is on the CREATE AN ACCOUNT page.............................passed
+When User choose the title "Mr".............................................failed
+And User enter the following details of personal information................skipped
+And User select the newsletter checkbox.....................................skipped
+And User select the special offers checkbox.................................skipped
+And User enter the following details of the address.........................skipped
+And User click on the Register button.......................................skipped
+Then MY ACCOUNT page is populated...........................................skipped
+And User click on the sign out button.......................................skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//span[input/@id='id_gender1']"}
+  (Session info: chrome=92.0.4515.131)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'LAPTOP-750JOEPR', ip: '192.168.1.101', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.131, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: C:\Users\102331~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:57979}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 71f23f0e1c4e48f30aa0cb5e0fbd840d
+*** Element info: {Using=xpath, value=//span[input/@id='id_gender1']}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at Actions.MyStore.selectTitle(MyStore.java:66)
+	at stepDefinations.stepDefination.user_choose_the_title(stepDefination.java:80)
+	at ✽.When User choose the title "Mr"(E2E.feature:22)
+]]></failure>
+</testcase>
+<testcase classname="End-to-end test" name="Login into the existing account" time="13.042944">
+<system-out><![CDATA[Given User click on the sign button.........................................passed
+And Authentication page is populated........................................passed
+When User enter the email already created with "CItest5@testing.com"........passed
+And User enter the password with "DS123"....................................passed
+And User click on the Sign in button........................................passed
+Then MY ACCOUNT page is populated...........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="End-to-end test" name="The user search for items from the search bar" time="27.705751">
+<system-out><![CDATA[Given Home page is triggered................................................passed
+When User search for some "T-shirt".........................................passed
+And User click on the search button.........................................passed
+And User select the "Faded Short" option....................................passed
+And User selects the following details for the item.........................passed
+And User add the products to the cart.......................................passed
+And User click on the Continue shopping button..............................passed
+Then The user is ready to continue..........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="End-to-end test" name="The user search for items from the category tabs" time="77.402166">
+<system-out><![CDATA[Given Home page is triggered................................................passed
+When User click on the "Blouses" category...................................passed
+And User select the "Blouse" option.........................................passed
+And User selects the following details for the item.........................passed
+And User add the products to the cart.......................................passed
+And User click on the Continue shopping button..............................passed
+And User click on the "Evening Dresses" category............................passed
+And User click on the "All specials" small button...........................passed
+And User select the "Printed Chiffon Dress" option..........................passed
+And User selects the following details for the item.........................passed
+And User add the products to the cart.......................................passed
+And User click on the Continue shopping button..............................passed
+Then The user is ready to continue..........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="End-to-end test" name="The user is ready to pay" time="52.305988">
+<system-out><![CDATA[Given The user has products in the Cart.....................................passed
+When User click on the Check out button.....................................passed
+And User proceeds to checkout...............................................passed
+And User writes "Be careful with the clothes"...............................passed
+And User proceeds to Shipping options.......................................passed
+And User reads the terms....................................................passed
+And User select the Terms of service checkbox...............................passed
+And User proceeds to the payment............................................passed
+And User selects the "bankwire" payment option..............................passed
+And User confirms the order.................................................passed
+And User goes to the orders page............................................passed
+And User checks and confirms the details of the order.......................passed
+And User downloads the invoice as PDF.......................................passed
+Then The order has been completed successfully..............................passed
+]]></system-out>
+</testcase>
+<testcase classname="End-to-end test" name="Sign off from the existing session" time="11.184589">
+<system-out><![CDATA[Given MY ACCOUNT page is populated..........................................passed
+When User click on the sign out button......................................passed
+Then The session has been closed sucessfully................................passed
+And The browser closes......................................................passed
+]]></system-out>
+</testcase>
+</testsuite>
