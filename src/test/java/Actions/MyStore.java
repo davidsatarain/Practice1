@@ -23,13 +23,13 @@ public class MyStore extends Base{
 	private String reference;
 	
 	public void launchBrowser() {
-		System.setProperty("webdriver.chrome.driver", "C:\\Users\\102331781\\Documents\\chromedriver.exe");
-		//WebDriverManager.chromedriver().setup();
-		//ChromeOptions options = new ChromeOptions();
-		//options.addArguments("--no-sandbox");
-		//options.addArguments("--disable-dev-shm-usage");
-		//options.addArguments("--headless");
-		driver = new ChromeDriver();
+		//System.setProperty("webdriver.chrome.driver", "C:\\Users\\102331781\\Documents\\chromedriver.exe");
+		WebDriverManager.chromedriver().setup();
+		ChromeOptions options = new ChromeOptions();
+		options.addArguments("--no-sandbox");
+		options.addArguments("--disable-dev-shm-usage");
+		options.addArguments("--headless");
+		driver = new ChromeDriver(options);
 		driver.manage().window().maximize();
 	}
 	
